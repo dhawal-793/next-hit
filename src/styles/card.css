@@ -1,0 +1,113 @@
+/* card css start */
+.grid {
+  padding: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+  align-items: start;
+  justify-content: center;
+  gap: 1rem 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  min-height: 55vh;
+  text-align: center;
+}
+
+.grid > article {
+  position: relative;
+  height: 220px;
+  max-width: 350px;
+  border: 1px solid var(--primary-black);
+  box-shadow: 8px 8px 2px 0px var(--primary-black);
+  background-color: var(--primary-white);
+  padding: 10px 0px;
+  border-radius: 20px;
+}
+
+.grid > article:hover {
+  box-shadow: 6px 6px 0px 0px var(--primary-black);
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.grid > article .btn-cont {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.grid .text {
+  padding: 0px 30px 0px 30px;
+  color: #000000;
+  font-size: 18px;
+}
+
+.grid .text p {
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid .text h3 {
+  text-align: left;
+  position: relative;
+  right: 10px;
+}
+
+h3 .card-title {
+  color: #000;
+  text-align: left;
+  position: relative;
+  bottom: 12px;
+  font-size: 22px;
+  left: 6px;
+}
+
+.btn-cont button {
+  background-color: var(--primary-black);
+  padding: 8px 25px;
+  border-radius: 8px;
+  margin: 2px;
+}
+
+.btn-cont button a {
+  text-decoration: none;
+  color: var(--primary-white);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Open Sans";
+}
+
+.btn-cont button i {
+  position: relative;
+  top: 3px;
+  margin-left: 5px;
+}
+
+.btn-cont button:hover {
+  transform: scale(1.05);
+}
+
+.bookmark{
+  cursor: pointer;
+}
+
+.visit{
+  cursor: pointer;
+}
+
+.no-results {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1f1e1e;
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  min-height: 55vh;
+}
+/* card end */

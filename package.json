@@ -1,0 +1,33 @@
+{
+  "name": "free-hit2.0",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "predeploy": "pnpm run build",
+    "preinstall": "npx only-allow pnpm",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "dependencies": {
+    "next": "13.4.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-scroll": "^1.8.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.14",
+    "husky": "^8.0.3",
+    "postcss": "8.4.23",
+    "prettier": "^2.8.8",
+    "tailwindcss": "3.3.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pnpm run format"
+    }
+  }
+}
