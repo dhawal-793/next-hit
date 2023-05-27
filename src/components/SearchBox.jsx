@@ -35,7 +35,7 @@ const SearchBox = () => {
 
     return (
         <>
-            <form className="relative w-36 xs:w-48 sm:w-72 h-6 xs:h-8 sm:h-11 " onSubmit={handleSearch}>
+            <form className="relative w-36 xs:w-48 sm:w-72 h-6 xs:h-8 sm:h-9 md:h-11 " onSubmit={handleSearch}>
                 <input
                     type="text"
                     className="peer absolute inset-0 rounded-full text-xs xs:text-sm md:text-base bg-dark-primary text-light-primary outline-none pl-1 xs:pl-3 pr-5 sm:px-5 sm:"
