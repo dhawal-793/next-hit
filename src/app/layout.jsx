@@ -1,7 +1,7 @@
 
 import './globals.css'
-import Navbar from '../components/Navbar'
-import BackToTopButton from '../components/BackToTop'
+import Navbar from '@/src/components/Navbar'
+import BackToTopButton from '@/src/components/BackToTop'
 
 export const metadata = {
     title: 'Create Next App',
@@ -11,9 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body >
+            <body className="bg-light-primary">
                 <Navbar />
-                 {children}
+                {children}
                 <BackToTopButton />
             </body>
         </html>
