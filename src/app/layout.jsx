@@ -13,7 +13,9 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className="bg-light-primary">
                 <Navbar />
-                {children}
+                <div className="max-w-screen-3xl mx-auto">
+                    {children}
+                </div>
                 <BackToTopButton />
             </body>
         </html>
