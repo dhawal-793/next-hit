@@ -1,5 +1,5 @@
-import CardContainer from "../components/CardContainer";
-import productsData from "../DB/product.json"
+import CardContainer from "@/src/components/CardContainer";
+import productsData from "@/src/DB/product.json"
 
 export default function Home() {
     return (
