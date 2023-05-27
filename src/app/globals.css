@@ -18,6 +18,6 @@
 
 @layer components {
   .sidebarLinks {
-    @apply flex gap-2 items-center w-full hover:bg-light-primary hover:text-dark-primary font-semibold p-2 rounded-lg text-sm sm:text-lg;
+    @apply flex gap-2 items-center w-full hover:bg-light-primary hover:text-dark-primary font-semibold p-2 rounded-lg text-sm sm:text-lg cursor-pointer;
   }
 }
