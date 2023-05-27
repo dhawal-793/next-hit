@@ -13,13 +13,14 @@ module.exports = {
         'dark-secondary': '#404040'
       },
       boxShadow: {
-        'card':'8px 8px 2px 0px #373530',
-        'card-hover':'6px 6px 0px 0px #373530'
+        'card': '8px 8px 2px 0px #373530',
+        'card-hover': '6px 6px 0px 0px #373530'
       }
     },
     screens: {
       'xs': '300px',
       ...defaultTheme.screens,
+      '3xl': '2220px'
     },
   },
   plugins: [],
