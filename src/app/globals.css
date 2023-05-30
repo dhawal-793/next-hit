@@ -12,7 +12,7 @@
     border-radius: 10px;
   }
   .grid-view{
-    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   }
 }
 
