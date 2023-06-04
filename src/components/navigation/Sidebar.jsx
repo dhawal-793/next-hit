@@ -39,7 +39,7 @@ const Sidebar = ({ navOpen = null, setNavOpen = null }) => {
   ]
 
   return (
-    <nav id="sidebar" className={`fixed left-0 pb-60 top-14 sm:top-[70px] h-[screen] transition-all duration-300 delay-100 ease-in-out ${!navOpen ? "-translate-x-full" : "translate-x-0"} bg-dark-secondary text-light-primary uppercase overflow-auto z-[100]`}>
+    <nav id="sidebar" className={`fixed left-0 pb-10 top-14 sm:top-[70px] h-screen min-h-screen transition-all duration-300 delay-100 ease-in-out ${!navOpen ? "-translate-x-full" : "translate-x-0"} bg-dark-secondary text-light-primary uppercase overflow-scroll z-[100]`}>
       <ul className="flex flex-col w-full text-sm sm:text-lg md:text-xl">
         {sideBarLinks.map(({ name, href, Icon }) => {
           return (
@@ -61,10 +61,10 @@ export default Sidebar
 const CategoriesLink = ({ toggleCategories, categoriesOpen, setNavOpen }) => {
   return (
     <li onClick={toggleCategories} className={` relative px-2 pl-5 sm:pl-8 py-3 cursor-pointer w-full flex flex-col items-start  border-y border-b-[#535353] border-t-[#ffffff1a] transition-all duration-300 ${!categoriesOpen && "hover:shadow-[0_0_10px_3px_rgba(34,34,34,1)] hover:border-y-transparent hover:z-20"}`}>
-      <div className={`${categoriesOpen && "pb-4"} flex gap-3 items-center `}>
+      <div className={`${categoriesOpen && "pb-4"} flex gap-4 items-center `}>
         <div className={`relative w-6 h-6 flex items-center`}>
-          <RiMenuUnfoldLine className={` absolute transition-all duration-300 ease-out ${categoriesOpen && " rotate-180 opacity-0 "} `} />
-          <RiMenuFoldLine className={` absolute transition-all duration-300 ease-out ${!categoriesOpen && " -rotate-180 opacity-0 "} `} />
+          <RiMenuUnfoldLine className={`w-6 h-6 absolute transition-all duration-300 ease-out ${categoriesOpen && " rotate-180 opacity-0 "} `} />
+          <RiMenuFoldLine className={`w-6 h-6 absolute transition-all duration-300 ease-out ${!categoriesOpen && " -rotate-180 opacity-0 "} `} />
         </div>
         <div>
           Categories
