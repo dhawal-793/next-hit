@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { RiCloseLine, RiMenuFill } from 'react-icons/ri';
 import Link from 'next/link';
 import Sidebar from './Sidebar';
-import SearchBox from './SearchBox';
+import SearchBox from '../SearchBox';
 
 
 const Navbar = () => {
