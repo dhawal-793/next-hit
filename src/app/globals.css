@@ -14,6 +14,13 @@
   .grid-view{
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   }
+
+  .page-height{
+    min-height: calc(100vh - 54.4px)
+  }
+  .md-page-height{
+    min-height: calc(100vh - 68.4px)
+  }
 }
 
 @layer components {

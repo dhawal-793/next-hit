@@ -1,8 +1,8 @@
 'use client'
 
-import CardContainer from "@/src/components/CardContainer"
+import CardContainer from "@/components/card/CardContainer"
 import { useEffect, useState } from "react"
-import { useBookmarkContext } from "@/src/context/bookmarkContext"
+import { useBookmarkContext } from "@/context/bookmarkContext"
 
 
 const Bookmarks = () => {
@@ -26,7 +26,7 @@ const Bookmarks = () => {
           bookmarks.length ?
             <CardContainer productsData={bookmarks} />
             :
-            <p className="text-center text-xl font-semibold">
+            <p className="text-xl font-semibold text-center">
               Sorry, no BookMarks to Show
             </p>
 

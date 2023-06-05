@@ -4,8 +4,6 @@ import { createContext, useContext, useEffect, useMemo, useReducer } from "react
 import { reducer, actions, initialState, getBookMarks } from "./bookmarkRducer";
 
 
-
-
 const BookmarkContext = createContext(initialState)
 
 export const BookmarkContextProvider = ({ children }) => {
@@ -15,7 +13,6 @@ export const BookmarkContextProvider = ({ children }) => {
         return {
             bookmarks: state.bookmarks,
             addBookmark: (bookmark) => {
-                console.log("Inside context add clicked")
                 dispatch({
                     type: actions.ADD,
                     payload: bookmark
