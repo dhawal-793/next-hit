@@ -1,5 +1,5 @@
-import CardContainer from "@/src/components/CardContainer"
-import products from "@/src/DB/product.json"
+import CardContainer from "@/components/card/CardContainer"
+import products from "@/DB/product.json"
 import { notFound } from "next/navigation"
 
 const Searchpage = ({ searchParams }) => {
