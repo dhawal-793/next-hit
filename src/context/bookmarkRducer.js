@@ -15,7 +15,6 @@ export const getBookMarks = () => {
     return bookmarkJson;
 }
 
-
 export const updateBookMarks = (bookmarks) => {
     localStorage.setItem(process.env.NEXT_PUBLIC_LOCAL_STORAGE_KEY, JSON.stringify(bookmarks));
 }
