@@ -1,4 +1,4 @@
-import ButtonLinks from "../../data/categories"
+import ButtonLinks from "@/data/categories"
 import { useRouter } from "next/navigation"
 
 const Categories = ({ categoriesOpen, setNavOpen, isActive }) => {
