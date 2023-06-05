@@ -7,7 +7,7 @@ const CategoryPage = ({ params: { category } }) => {
 
     if (!categories.includes(category)) { return notFound() }
 
-    const data = products.filter(
+    const data = category === "all" ? products : products.filter(
         (el) => el.category.toLowerCase().includes(category)
     )
 
