@@ -1,6 +1,6 @@
 'use client'
 
-import CardContainer from "@/components/card/CardContainer"
+import ToolContainer from "@/components/card/ToolContainer"
 import { useEffect, useState } from "react"
 import { useBookmarkContext } from "@/context/bookmarkContext"
 
@@ -24,7 +24,7 @@ const Bookmarks = () => {
         bookmarksLoading ? <p>Loading...</p>
           :
           bookmarks.length ?
-            <CardContainer productsData={bookmarks} />
+            <ToolContainer productsData={bookmarks} />
             :
             <p className="text-xl font-semibold text-center">
               Sorry, no BookMarks to Show

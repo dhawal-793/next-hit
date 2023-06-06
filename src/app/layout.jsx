@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
             <body className="bg-light-primary">
                 <BookmarkContextProvider>
                     <Navbar />
-                    <div className="mx-auto max-w-screen-3xl">
+                    <main className="mx-auto max-w-screen-3xl">
                         {children}
-                    </div>
+                    </main>
                     <BackToTopButton />
                 </BookmarkContextProvider>
             </body>
