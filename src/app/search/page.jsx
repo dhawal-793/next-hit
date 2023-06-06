@@ -1,4 +1,4 @@
-import CardContainer from "@/components/card/CardContainer"
+import ToolContainer from "@/components/card/ToolContainer"
 import products from "@/DB/product.json"
 import { notFound } from "next/navigation"
 
@@ -11,7 +11,7 @@ const Searchpage = ({ searchParams }) => {
   if (data.lengt < 1) return notFound()
 
   return (
-    <CardContainer productsData={data} />
+    <ToolContainer productsData={data} />
   )
 }
 
