@@ -6,7 +6,7 @@ import { TfiMenuAlt } from "react-icons/tfi"
 import Card from "./Card"
 import List from "./List"
 
-const CardContainer = ({ productsData }) => {
+const ToolContainer = ({ productsData }) => {
 
   const [layout, setLayout] = useState("card")
 
@@ -29,4 +29,4 @@ const CardContainer = ({ productsData }) => {
   )
 }
 
-export default CardContainer
+export default ToolContainer
