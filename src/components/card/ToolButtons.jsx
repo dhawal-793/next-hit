@@ -3,7 +3,7 @@ import { usePathname } from "next/navigation"
 import Button from "./Button"
 
 
-const ToolButtons = ({ link, productData }) => {
+const ToolButtons = ({ link, productData, productName }) => {
     const { bookmarks, addBookmark, removeBookmark } = useBookmarkContext()
     const path = usePathname()
     return (
