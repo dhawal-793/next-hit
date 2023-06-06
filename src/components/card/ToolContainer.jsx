@@ -13,7 +13,7 @@ const ToolContainer = ({ productsData }) => {
   const toggleLayout = (type) => setLayout(type)
 
   return (
-    <>
+    <div className="flex flex-col items-center justify-center">
       <div className="flex items-center justify-end w-full gap-4 p-5 pt-8">
         <MdWindow role="button" onClick={() => toggleLayout("card")} className={`w-7 h-7 xs:w-8 xs:h-8 cursor-pointer border-b-4 transition-all duration-200 ${layout === "card" ? "text-dark-primary border-dark-primary" : "text-dark-secondary opacity-70 border-transparent"} hover:text-dark-primary  hover:opacity-100`} />
         <TfiMenuAlt role="button" onClick={() => toggleLayout("list")} className={`w-7 h-7 xs:w-8 xs:h-8 cursor-pointer border-b-4 transition-all duration-200 ${layout === "list" ? "text-dark-primary border-dark-primary" : "text-dark-secondary opacity-70 border-transparent"} hover:text-dark-primary  hover:opacity-100`} />
@@ -25,7 +25,7 @@ const ToolContainer = ({ productsData }) => {
             <List key={index} productData={productData} />
         })}
       </div>
-    </>
+    </div>
   )
 }
 
