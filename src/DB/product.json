@@ -1,10 +1,31 @@
 [
   {
+    "productName": "Cuvette",
+    "category": "remote",
+    "image": "https://bit.ly/3MIvfgn",
+    "link": "https://bit.ly/42dFNKk",
+    "description": "The #1 way college students & early graduates get Internships & Jobs"
+  },
+  {
     "productName": "Dev Resources",
     "category": "tools",
     "image": "https://bit.ly/3MxAlNU",
     "link": "https://devresourc.es/",
     "description": "A collaborative list of resources for developers"
+  },
+  {
+    "productName": "ABBYY FineReader",
+    "category": "tools",
+    "image": "https://bit.ly/43RCAkX",
+    "link": "https://pdf.abbyy.com/",
+    "description": "Offers powerful OCR capabilities to transform scanned documents into editable files with high accuracy."
+  },
+  {
+    "productName": "Smallpdf",
+    "category": "tools",
+    "image": "https://play-lh.googleusercontent.com/6rZArbkYpvNYuTnlcPh3U8KRP4cii_Leptqx_rspIJuYKXeCeHikP2ZPcHhZKicaQeI",
+    "link": "https://smallpdf.com/",
+    "description": " Online platform that offers a range of tools for working with PDF files, including conversion and editing."
   },
   {
     "productName": "Font Awesome",
@@ -14,11 +35,25 @@
     "description": "Internet's icon library and toolkit, used by millions of designers, developers, and content creators"
   },
   {
+    "productName": "ChatGPT Writer",
+    "category": "tools",
+    "image": "https://is.gd/ay5HYZ",
+    "link": "https://chatgptwriter.ai/",
+    "description": "Write emails & messages, fix grammar mistakes, rephrase text, change writing tone, summarize text."
+  },
+  {
     "productName": "Flow CV",
     "category": "resume",
     "image": "https://bit.ly/3YnFYBJ",
     "link": "https://flowcv.com/",
     "description": "A tool that is used to create beautiful resumes"
+  },
+  {
+    "productName": "Screen Recorder",
+    "category": "tools",
+    "image": "https://shorturl.at/nBJQY",
+    "link": "https://scre.io/",
+    "description": "Record a video from the camera or capture it from the screen"
   },
   {
     "productName": "Awesome Screen Capture And Recorder",
@@ -68,6 +103,13 @@
     "image": "https://bit.ly/3RQAMDP",
     "link": "https://remoteok.com/",
     "description": "Job board for remote jobs in tech and other fields."
+  },
+  {
+    "productName": "Audio Enhancer",
+    "category": "tools",
+    "image": "https://shorturl.at/uxGQ3",
+    "link": "https://shorturl.at/AILW3",
+    "description": "Remove noise from voice recordings with speech enhancement"
   },
   {
     "productName": "Angel.co",
@@ -259,13 +301,6 @@
     "description": "Fast, ad-free, and privacy-first solution for streamlined development."
   },
   {
-    "productName": "futurepedia",
-    "category": "tools",
-    "image": "https://www.futurepedia.io/futurepedia-small.svg",
-    "link": "https://www.futurepedia.io/",
-    "description": "Wiki and community for the Back to the Future franchise."
-  },
-  {
     "productName": "jsonformatter",
     "category": "tools",
     "image": "https://bit.ly/3zybQZn",
@@ -443,7 +478,7 @@
   {
     "productName": "CodeSandBox",
     "category": "web",
-    "image": "https://bit.ly/3KESoB0",
+    "image": "https://www.saashub.com/images/app/service_logos/9/ae995212f366/large.png?1528180811",
     "link": "https://codesandbox.io/",
     "description": "Online code editor and developer collaboration platform."
   },
@@ -564,7 +599,7 @@
     "category": "tools",
     "image": "https://bit.ly/3YZGSVi",
     "link": "https://www.photopea.com/",
-    "description": "Online "
+    "description": "Free online editor supporting PSD, XCF, Sketch, XD, and CDR formats.(Adobe Photoshop, GIMP, Sketch App, Adobe XD, corelDRAW) "
   },
   {
     "productName": "theuselessweb",
@@ -981,10 +1016,10 @@
   },
   {
     "productName": "CleanVoice",
-    "category" : "tools",
-    "image" : "https://ibb.co/6BmfNWm",
-    "link" : "https://cleanvoice.ai/",
-    "description" : "Automatically edit your podcast episodes"
+    "category": "tools",
+    "image": "https://s3-eu-west-1.amazonaws.com/tpd/logos/613f6a30dc3b50001d3e4f61/0x0.png",
+    "link": "https://cleanvoice.ai/",
+    "description": "Automatically edit your podcast episodes"
   },
   {
     "productName": "Redux DevTools",
@@ -1003,7 +1038,7 @@
   {
     "productName": "Chaijs",
     "category": "tools",
-    "image": "shorturl.at/yzKQ2",
+    "image": "https://is.gd/UcyQiZ",
     "link": "https://www.chaijs.com/",
     "description": "Chai is a BDD / TDD assertion library for node"
   },
@@ -1038,7 +1073,7 @@
   {
     "productName": "unDraw",
     "category": "tools",
-    "image": "https://bit.ly/3LqjzOT",
+    "image": "https://is.gd/VQBVZP",
     "link": "https://undraw.co/",
     "description": "Create better designed websites, products and applications"
   },
@@ -1073,7 +1108,7 @@
   {
     "productName": "FuturePedia",
     "category": "tools",
-    "image": " https://bit.ly/42M17ar",
+    "image": "https://is.gd/qAYeL2",
     "link": "https://www.futurepedia.io/",
     "description": "THE LARGEST AI TOOLS DIRECTORY, UPDATED DAILY"
   },
@@ -1164,7 +1199,7 @@
   {
     "productName": "IT - TOOLS",
     "category": "tools",
-    "image": "https://t.ly/iNPq",
+    "image": "https://is.gd/ejPslc",
     "link": "https://it-tools.tech/",
     "description": "Handy Tools for developers"
   },
@@ -1202,5 +1237,259 @@
     "image": "https://rb.gy/njt4s",
     "link": "https://rb.gy/k7ghv",
     "description": "Record your screen synced with network traffic and javascript errors."
-  }
+  },
+  {
+    "productName": "Google Translate",
+    "category": "extensions",
+    "image": "https://rb.gy/ysdw5",
+    "link": "https://rb.gy/td69u",
+    "description": "Click the translate icon whenever you want to translate the page you're visiting."
+  },
+  {
+    "productName": "Enhancer For Youtube",
+    "category": "extensions",
+    "image": "https://rb.gy/o9zuj",
+    "link": "https://rb.gy/wspao",
+    "description": "Enhance the YouTube viewing experience by ad blocking, adjustable video playback speed, dark mode, customizable themes"
+  },
+  {
+    "productName": "PDF24",
+    "category": "tools",
+    "image": "https://bit.ly/3MQDCYu",
+    "link": "https://bit.ly/45sK1jN",
+    "description": "One stop solution for all your pdf problems."
+  },
+  {
+    "productName": "Volume Booster",
+    "category": "extensions",
+    "image": "https://rb.gy/27sfy",
+    "link": "https://rb.gy/c3tnu",
+    "description": "Volume Booster helps boost video or music volume sound! Increase volume and bass booster, equalizer."
+  },
+  {
+    "productName": "Showwcase",
+    "category": "tools",
+    "image": "https://is.gd/3ITVcB",
+    "link": "https://bit.ly/424VRh7",
+    "description": "Showwcase helps developers connect, build communities, and gain access to new opportunities."
+  },
+  {
+    "productName": "Fatkun",
+    "category": "tools",
+    "image": "https://bit.ly/43mbOkf",
+    "link": "https://bit.ly/3OzgP4V",
+    "description": "Fatkun helps users download all pictures on the page with one click."
+  },
+  {
+    "productName": "Save as PDF",
+    "category": "extensions",
+    "image": "https://rb.gy/zc62y",
+    "link": "https://rb.gy/18vlo",
+    "description": "Lets you download web pages as PDF in one click."
+  
+},
+{
+    "productName": "Stack Overflow",
+    "category": "tools",
+    "image": "https://bit.ly/3oyl7Pa",
+    "link": "https://bit.ly/43s8OTh",
+    "description": "Stack Overflow is a question and answer website for programmers. It is the flagship site of the Stack Exchange Network."
+  },
+  {
+    "productName": "Linkedin",
+    "category": "remote",
+    "image": "https://bit.ly/43gXwRY",
+    "link": "https://bit.ly/427YkYr",
+    "description": "LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps."
+  },
+  {
+    "productName": "Reduce Images",
+    "category": "tools",
+    "image": "https://bit.ly/43oj2En",
+    "link": "https://bit.ly/45xxiN6",
+    "description": "Reduce Images is a website for resizing of various size photos that required during various forms filling."
+  },
+  {
+    "productName": "CSS Shadows",
+    "category": "tools",
+    "image": "https://bit.ly/3MA7PtJ",
+    "link": "https://bit.ly/3BVJM3j",
+    "description": "Gives custom CSS shadow designs to users to reduce time and give a lot of ideas "
+  },
+  {
+    "productName": "SD moviespoint",
+    "category": "movies",
+    "image": "https://bit.ly/3WyaTei",
+    "link": "https://bit.ly/3BTxMiW",
+    "description": "Download all latest Movies from here free."
+  },
+  {
+    "productName": "Piped",
+    "category":"remote",
+    "image":"https://bit.ly/45zisFw",
+    "link":"https://piped.kavin.rocks",
+    "description":"An alternative privacy-friendly YouTube frontend which is efficient by design."
+  
+},
+{
+  "productName": "UserTesting",
+  "category": "tools",
+  "image": "https://shorturl.at/bovAS",
+  "link": "https://www.usertesting.com/",
+  "description": "Testing platform where you can get your app tested and take feedback from real user."
+},
+{
+  "productName": "Boxicons",
+  "category": "tools",
+  "image": "https://i.ibb.co/tC1BtcR/boxicons-png.jpg",
+  "link": "https://boxicons.com/",
+  "description": "Simple Open Source icons carefully crafted for designers & developers."
+},
+{
+  "productName": "Bootstrap Icons",
+  "category": "tools",
+  "image": "https://rb.gy/swae5",
+  "link": "https://icons.getbootstrap.com/",
+  "description": "Free, high quality, open source icon library with over 1,800 icons."
+},
+{
+  "productName": "Material UI",
+  "category": "tools",
+  "image": "https://mui.com/static/logo.png",
+  "link": "https://mui.com/",
+  "description": "MUI offers a comprehensive suite of UI tools to help you ship new features faster."
+},
+{
+   "productName": "Cataz",
+   "category": "movies",
+   "image": "https://bit.ly/45EQRTq",
+   "link": "https://cataz.net/",
+   "description": "Best websites to stream your favourite series online"
+ },
+ {
+  "productName": "UnLighthouse",
+  "category": "tools",
+  "image": "https://bit.ly/3MGIY7t",
+  "description": "Like Lighthouse, but it scans every single page",
+  "link": "https://unlighthouse.dev"
+ },
+ {
+  "productName": "Regexr",
+  "category": "tools",
+  "image": "https://bit.ly/3qjRyl9",
+  "description": "Regexr is an online tool to learn, build, & test Regular Expressions.",
+  "link": "https://regexr.com/"
+ },
+  {
+  "productName": "Unblast UI  Templates",
+  "category": "ui",
+  "image": "https://bit.ly/3qlij8V",
+  "link": "https://bit.ly/3C51MZ3",
+  "description": "Unblast is happy to offer you a rich collection of amazing UI templates."
+},
+  {
+  "productName": "UI Design Daily",
+  "category": "ui",
+  "image": "https://bit.ly/3WOEP6c",
+  "link": "https://bit.ly/45F3IVF",
+  "description": "UI Design Daily to be able to share these designs with anybody who is interested in using them."
+},
+{
+  "productName": "Previewed Mockups",
+  "category": "ui",
+  "image": "https://bit.ly/3qoFyP5",
+  "link": "https://bit.ly/42iAj0C",
+  "description": "UI Design Mockups Available 2d & 3D"
+},
+{
+  "productName": "UI : Muzli Collections",
+  "category": "ui",
+  "image": "https://bit.ly/42h8JRq",
+  "link": "https://bit.ly/3IOltZ2",
+  "description": "Profile Page screen design inspiration"
+},
+{
+  "productName": "Dashboard UI Kit 3.0",
+  "category": "ui",
+  "image": "https://bit.ly/3N2secf",
+  "link": "https://bit.ly/3N4lGK9",
+  "description": "The first and largest design kit for web apps and dashboards developed in React."
+},
+{
+  "productName": "UI Kit : figma, XD, etc",
+  "category": "ui",
+  "image": "https://bit.ly/45COMri",
+  "link": "https://bit.ly/45BOgd8",
+  "description": "UI Kits avaiable in various format like figma, Xd, PSD, AI etc."
+},
+{
+  "productName": "3D Icons",
+  "category": "ui",
+  "image": "https://bit.ly/43yR9th",
+  "link": "https://bit.ly/43dBe3H",
+  "description": "3D icons & 3D characters in high 4K resolution"
+},
+{
+  "productName": "6.5 M+ Design Assets",
+  "category": "ui",
+  "image": "https://bit.ly/3C47pH3",
+  "link": "https://bit.ly/3P5Hman",
+  "description": "Curated SVGs, Vector Icons, Illustrations, 3D Graphics, and Lottie Animations."
+},
+{
+  "productName": "Design Junction ",
+  "category": "ui",
+  "image": "https://bit.ly/3IKfowL",
+  "link": "https://bit.ly/3WFi2tq",
+  "description": "Design Junction is a one-stop resource library for Designers and Creatives."
+},
+{
+  "productName": "Fireflies",
+  "category": "ai",
+  "image": "https://rb.gy/7551l",
+  "link": "https://fireflies.ai/",
+  "description": "Helps your team record, transcribe, search, and analyze voice conversations."
+},
+{
+  "productName": "resume.io",
+  "category": "resume",
+  "image": "https://tinyurl.com/2s48hfyh",
+  "link": "https://resume.io/",
+  "description": "Beautiful ready-to-use resume templates"
+},
+{
+  "productName": "Canva",
+  "category": "resume",
+  "image": "https://tinyurl.com/2mxee67k",
+  "link": "https://www.canva.com/create/resumes/",
+  "description": "With Canva free resume builder, applying for your dream job is easy and fast."
+},
+{
+  "productName": "Quill Bot",
+  "category": "ai",
+  "image": "https://tinyurl.com/5n6zfp2y",
+  "link": "https://quillbot.com/",
+  "description": "AI-powered paraphrasing tool that enhances your writing"
+},
+  {
+  "productName": "Zarla",
+  "category": "tools",
+  "image": "https://bit.ly/42Cp1ot",
+  "link": "https://www.zarla.com/",
+  "description": "Zarla Makes Logo Design Fun, Free, and Easy for Every Type of Business or Brand"
+},
+{
+  "productName": "Zety",
+  "category": "resume",
+  "image": "https://bit.ly/3CbQwdG",
+  "link": "https://zety.com/resume-builder",
+  "description": "Zety Online Resume Builder,Create a Professional Resume for Free"
+},
+  {
+  "productName": "Animoto",
+  "category": "AI",
+  "image": "https://bit.ly/3WSfus6",
+  "link": "https://animoto.com/",
+  "description": "Create videos that engage and impress. Animoto's drag-and-drop editing tools and visual effects make it easy. No training or experience necessary"
+}
 ]

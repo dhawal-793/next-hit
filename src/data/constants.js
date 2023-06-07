@@ -6,6 +6,7 @@ const categories = [
     'ethical',
     'movies',
     'extensions',
+    'ui',
     'tools'
 ]
 export default categories
