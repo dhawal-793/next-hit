@@ -2,7 +2,7 @@
 import './globals.css'
 import Navbar from '@/components/navigation/Navbar'
 import BackToTopButton from '@/components/buttons/BackToTop'
-import { BookmarkContextProvider } from '@/context/bookmarkContext'
+import Providers from '@/components/Providers'
 
 export const metadata = {
     title: 'Create Next App',
@@ -13,13 +13,13 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className="bg-light-primary">
-                <BookmarkContextProvider>
+                <Providers>
                     <Navbar />
                     <main className="mx-auto max-w-screen-3xl">
                         {children}
                     </main>
                     <BackToTopButton />
-                </BookmarkContextProvider>
+                </Providers>
             </body>
         </html>
     )
