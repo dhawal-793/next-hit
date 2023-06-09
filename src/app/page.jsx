@@ -1,9 +1,12 @@
+'use client'
 import ToolContainer from "@/components/card/ToolContainer";
-import productsData from "@/DB/product.json"
+import { useProductsContext } from "@/context/productsContext";
+
 
 export default function Home() {
-    return (
-        <ToolContainer productsData={productsData} />
+    const { products } = useProductsContext()
 
+    return (
+        <ToolContainer productsData={products} />
     )
 }
