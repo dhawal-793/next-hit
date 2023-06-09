@@ -1,14 +1,14 @@
 'use client'
 
 import { createContext, useContext, useMemo, useReducer } from "react";
-import { reducer, actions, initialState } from "./productsReducer";
+import { productReducer, actions, productReducerInitialState } from "./productsReducer";
 
 
 
-const ProductsContext = createContext(initialState)
+const ProductsContext = createContext(productReducerInitialState)
 
 export const ProductsContextProvider = ({ children }) => {
-    const [state, dispatch] = useReducer(reducer, initialState)
+    const [state, dispatch] = useReducer(productReducer, productReducerInitialState)
 
     const contextValue = useMemo(() => {
         return {
