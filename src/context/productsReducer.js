@@ -4,7 +4,7 @@ import productsData from "@/DB/product.json"
 import { searchProducts, sortAscending, sortDescending } from "@/utils/search_sort";
 
 
-export const initialState = {
+export const productReducerInitialState = {
     products: sortAscending(productsData),
     searchTerm: "",
     sort: "asc"
@@ -16,18 +16,18 @@ export const actions = {
     SORT_DESC: "SORT_DESCENDING",
 }
 
-export const reducer = (state, action) => {
+export const productReducer = (state, action) => {
     const { type, payload } = action;
     switch (type) {
         case actions.SEARCH: {
             // console.log("Inside reducer action.SEARCH => ", payload)
-            const filteredProducts = searchProducts( payload)
+            const filteredProducts = searchProducts(payload)
             if (state.sort === "asc") {
                 const sortedAscendingData = sortAscending(filteredProducts)
                 return { ...state, products: sortedAscendingData }
             }
-            if (state.sort === "desc") {
-                const sortedDescendingData = sortDescending(state.products)
+            else if (state.sort === "desc") {
+                const sortedDescendingData = sortDescending(filteredProducts)
                 return { ...state, products: sortedDescendingData }
             }
             const newState = { ...state, products: filteredProducts }
