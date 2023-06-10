@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
             <body className="bg-light-primary">
                 <Providers>
                     <Navbar />
-                    <main className="mx-auto max-w-screen-3xl">
+                    <main className="mx-auto max-w-screen-3xl page-height sm:sm-page-height md:md-page-height">
                         {children}
                     </main>
                     <BackToTopButton />
