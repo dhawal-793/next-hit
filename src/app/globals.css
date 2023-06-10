@@ -6,16 +6,25 @@
   * {
     font-family: 'Space Grotesk', sans-serif;
   }
-   
+
+  ::-webkit-scrollbar {
+    background-color: #f1f1ef;
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #373530;
+    border-radius: 3px;
+  }
+
   #sidebar::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   #sidebar::-webkit-scrollbar-thumb {
     background-color: #999;
     border-radius: 10px;
   }
-  
+
   .grid-view {
     grid-template-columns: repeat(auto-fit, minmax(340px, auto));
   }
