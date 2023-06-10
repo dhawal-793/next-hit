@@ -3,23 +3,31 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+   
   #sidebar::-webkit-scrollbar {
     width: 8px;
   }
-
+  
   #sidebar::-webkit-scrollbar-thumb {
     background-color: #999;
     border-radius: 10px;
   }
-  .grid-view{
+  
+  .grid-view {
     grid-template-columns: repeat(auto-fit, minmax(340px, auto));
   }
 
-  .page-height{
-    min-height: calc(100vh - 54.4px)
+  .page-height {
+    min-height: calc(100vh - 399.7px);
   }
-  .md-page-height{
-    min-height: calc(100vh - 68.4px)
+  .sm-page-height {
+    min-height: calc(100vh - 413.7px);
+  }
+  .md-page-height {
+    min-height: calc(100vh - 385.7px);
   }
 }
 
