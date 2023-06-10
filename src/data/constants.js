@@ -7,6 +7,7 @@ const categories = [
     'movies',
     'extensions',
     'ui',
+    'web',
     'tools'
 ]
 export default categories
