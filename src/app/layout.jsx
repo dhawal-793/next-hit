@@ -3,6 +3,7 @@ import './globals.css'
 import Navbar from '@/components/navigation/Navbar'
 import BackToTopButton from '@/components/buttons/BackToTop'
 import Providers from '@/components/Providers'
+import Footer from '@/components/Footer'
 
 export const metadata = {
     title: 'Create Next App',
@@ -15,10 +16,11 @@ export default function RootLayout({ children }) {
             <body className="bg-light-primary">
                 <Providers>
                     <Navbar />
-                    <main className="mx-auto max-w-screen-3xl">
+                    <main className="mx-auto max-w-screen-3xl page-height sm:sm-page-height md:md-page-height">
                         {children}
                     </main>
                     <BackToTopButton />
+                    <Footer />
                 </Providers>
             </body>
         </html>

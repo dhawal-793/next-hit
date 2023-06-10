@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: #f1f1ef;
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #373530;
+    border-radius: 3px;
+  }
+
   #sidebar::-webkit-scrollbar {
     width: 8px;
   }
@@ -11,15 +24,19 @@
     background-color: #999;
     border-radius: 10px;
   }
-  .grid-view{
+
+  .grid-view {
     grid-template-columns: repeat(auto-fit, minmax(340px, auto));
   }
 
-  .page-height{
-    min-height: calc(100vh - 54.4px)
+  .page-height {
+    min-height: calc(100vh - 399.7px);
   }
-  .md-page-height{
-    min-height: calc(100vh - 68.4px)
+  .sm-page-height {
+    min-height: calc(100vh - 413.7px);
+  }
+  .md-page-height {
+    min-height: calc(100vh - 385.7px);
   }
 }
 

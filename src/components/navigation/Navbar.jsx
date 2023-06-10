@@ -26,9 +26,9 @@ const Navbar = () => {
                     <div>
                         <h1 className="flex items-center space-x-2 ">
                             <Link href="/about">
-                                <img className="w-6 h-6 xs:h-8 xs:w-8 sm:h-9 sm:w-9 md:w-11 md:h-11 " src="images/free-logo.png" alt="" />
+                                <img className="w-6 h-6 rounded-md xs:h-8 xs:w-8 sm:h-9 sm:w-9 md:w-11 md:h-11" src="images/free-logo.png" alt="" />
                             </Link>
-                            <Link className="hidden pb-2 text-4xl font-bold sm:block md:text-5xl" href="/about">Free-Hit</Link>
+                            <Link className="hidden text-4xl font-bold sm:block md:text-5xl" href="/about">Free-Hit</Link>
                         </h1>
                     </div>
                 </div>
