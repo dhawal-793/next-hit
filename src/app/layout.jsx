@@ -3,6 +3,7 @@ import './globals.css'
 import Navbar from '@/components/navigation/Navbar'
 import BackToTopButton from '@/components/buttons/BackToTop'
 import Providers from '@/components/Providers'
+import Footer from '@/components/Footer'
 
 export const metadata = {
     title: 'Create Next App',
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
                         {children}
                     </main>
                     <BackToTopButton />
+                    <Footer />
                 </Providers>
             </body>
         </html>
