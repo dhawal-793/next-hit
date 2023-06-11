@@ -7,7 +7,7 @@ const ToolButtons = ({ link, productData, productName }) => {
     const { bookmarks, addBookmark, removeBookmark } = useBookmarkContext()
     const path = usePathname()
     return (
-        <div className="flex pb-3 mx-auto space-x-3 w-fit">
+        <div className="flex mx-auto space-x-3 w-fit">
             <a href={link} target="_blank" className="capitalize bg-dark-primary text-light-primary py-2 px-3 sm:px-6 rounded-lg m-0.5 cursor-pointer hover:scale-105 inline-block transition-all">
                 Visit
             </a>

@@ -5,6 +5,7 @@ import Card from "./Card"
 import List from "./List"
 import ViewButtonGroup from "../buttons/ViewButtonGroup"
 import FilterButtonGroup from "../buttons/FilterButtonGroup"
+import NoDataFound from "../NoDataFound"
 
 const ToolContainer = ({ productsData }) => {
 
@@ -31,12 +32,7 @@ const ToolContainer = ({ productsData }) => {
           </div>
         </>
         :
-        <div className="flex flex-col items-center p-12 pb-1 text-center gap-y-5">
-          <p className="py-5 text-[2rem] font-bold uppercase ">
-            sorry, out toolbox seems empty for this Search term!
-          </p>
-          <img src="/images/sad-face-2.png" alt="Tools Not Found" className="h-60 w-52"/>
-        </div>
+        <NoDataFound image="/images/sad-face-2.png" description="sorry, out toolbox seems empty for this Search term!" />
       }
     </div>
   )
