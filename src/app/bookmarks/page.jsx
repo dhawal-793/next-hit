@@ -3,6 +3,7 @@
 import ToolContainer from "@/components/card/ToolContainer"
 import { useEffect, useState } from "react"
 import { useBookmarkContext } from "@/context/bookmarkContext"
+import NoDataFound from "@/components/NoDataFound"
 
 
 const Bookmarks = () => {
@@ -26,9 +27,7 @@ const Bookmarks = () => {
           bookmarks.length ?
             <ToolContainer productsData={bookmarks} />
             :
-            <p className="text-xl font-semibold text-center">
-              Sorry, no BookMarks to Show
-            </p>
+            <NoDataFound image="/images/sad-face.png" description="SORRY, NO BOOKMARKS IN SIGHT!" />
 
       }
     </>
