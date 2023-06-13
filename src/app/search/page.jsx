@@ -1,5 +1,5 @@
 import ToolContainer from "@/components/card/ToolContainer"
-import products from "@/DB/product.json"
+import products from "@/DB/products.json"
 import { notFound } from "next/navigation"
 
 const Searchpage = ({ searchParams }) => {
