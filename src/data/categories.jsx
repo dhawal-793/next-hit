@@ -1,5 +1,5 @@
 import { RiBriefcaseLine, RiBugLine, RiChromeLine, RiClipboardLine, RiMovie2Line, RiRemoteControlLine, RiRobotLine, RiToolsFill } from "react-icons/ri"
-import { SiAdobexd } from "react-icons/si"
+import { SiAdobexd,SiVisualstudiocode } from "react-icons/si"
 import { FaGlobe } from "react-icons/fa"
 const ButtonLinks = [
   {
@@ -58,6 +58,12 @@ const ButtonLinks = [
   },
   {
     id: 10,
+    name: 'Coding Platforms',
+    category: 'coding',
+    icon: [SiVisualstudiocode,'ri-tools-fill'],
+  },
+  {
+    id: 11,
     name: 'Useful Tools',
     category: 'tools',
     icon: [RiToolsFill, 'ri-tools-fill']
