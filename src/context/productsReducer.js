@@ -1,6 +1,6 @@
 'use client'
 
-import productsData from "@/DB/product.json"
+import productsData from "@/DB/products.json"
 import { searchProducts, sortAscending, sortDescending } from "@/utils/search_sort";
 
 

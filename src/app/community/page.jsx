@@ -8,7 +8,6 @@ const Community = async () => {
   return (
     <div className="px-2 py-4 ">
       <h2 className="font-semibold text-2xl sm:text-4xl md:text-[3rem] text-center my-2 mb-10">Meet Our Contributors</h2>
-
       <ul className="relative flex flex-wrap justify-center w-full gap-12 py-7">
         {contributors?.map(
           (contributor) =>

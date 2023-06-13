@@ -8,6 +8,7 @@ const categories = [
     'extensions',
     'ui',
     'web',
+    'coding',
     'tools'
 ]
 export default categories

@@ -1,5 +1,5 @@
 
-import products from "@/DB/product.json"
+import products from "@/DB/products.json"
 export const sortAscending = (products) => {
     const SortedData = products.sort((a, b) => {
         const nameA = a.productName.toUpperCase()

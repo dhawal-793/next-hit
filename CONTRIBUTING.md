@@ -52,7 +52,7 @@ pnpm start
 ```
 
 5. Add new tool :
-   > Go to **src > DB > `product.json`** & add your code
+   > Go to **src > DB > `products.json`** & add your code
 
 ```
 {
