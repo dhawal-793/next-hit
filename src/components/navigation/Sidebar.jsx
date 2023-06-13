@@ -44,13 +44,7 @@ const Sidebar = ({ navOpen = null, setNavOpen = null }) => {
 
   const toggleCategories = () => setCategoriesOpen(prev => !prev)
 
-  const isActive = (path, category = false) => {
-    if (category) {
-      const link = pathName?.split('/').pop() === path
-      return link
-    }
-    return pathName?.split('/').pop() === path
-  }
+  const isActive = (path) => pathName?.split('/').pop() === path
 
 
   return (
@@ -59,9 +53,9 @@ const Sidebar = ({ navOpen = null, setNavOpen = null }) => {
         {sideBarLinks.map(({ name, href, Icon }) => {
           return (
             name === "categories" ?
-              <CategoriesLink isActive={isActive} categoriesOpen={categoriesOpen} setNavOpen={setNavOpen} toggleCategories={toggleCategories} />
+              <CategoriesLink key={name} isActive={isActive} categoriesOpen={categoriesOpen} setNavOpen={setNavOpen} toggleCategories={toggleCategories} />
               :
-              <SidebarLink isActive={isActive} href={href} key={name} name={name} Icon={Icon} setNavOpen={setNavOpen} />
+              <SidebarLink key={name} isActive={isActive} href={href} name={name} Icon={Icon} setNavOpen={setNavOpen} />
 
           )
         })}
