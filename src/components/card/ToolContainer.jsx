@@ -25,9 +25,9 @@ const ToolContainer = ({ productsData }) => {
           </div>
 
           <div className={` items-center justify-center w-full gap-4 p-5  ${layout === "card" ? "grid grid-view" : "flex flex-col "}`}>
-            {productsData.map((productData, index) => {
-              return layout === "card" ? <Card key={index} productData={productData} /> :
-                <List key={index} productData={productData} />
+            {productsData.map((productData) => {
+              return layout === "card" ? <Card key={productData.productName} productData={productData} /> :
+                <List key={productData.productName} productData={productData} />
             })}
           </div>
         </>
