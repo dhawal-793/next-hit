@@ -11,12 +11,15 @@ const List = ({ productData }) => {
     const { bookmarks } = useBookmarkContext()
     const [showDescription, setShowDescription] = useState(false)
 
-    const toggleShow = () => setShowDescription(prev => !prev)
+    const toggleShow = (e) => {
+        e.stopPropagation();
+        setShowDescription(prev => !prev)
+    }
 
     useEffect(() => { }, [bookmarks])
     return (
         <article className="relative flex flex-col justify-between w-full border rounded-lg border-dark-primary shadow-card bg-light-primary">
-            <div className={`flex items-center justify-between h-24 p-2 hover:bg-[#E8E8E6] cursor-pointer  ${showDescription?"rounded-t-lg":"rounded-lg"}`} onClick={toggleShow}>
+            <div className={`flex items-center justify-between h-24 p-2 hover:bg-[#E8E8E6] cursor-pointer  ${showDescription ? "rounded-t-lg" : "rounded-lg"}`} onClick={toggleShow}>
                 <div className="flex items-center flex-1 w-full gap-3 pl-2">
                     <img src={image} className="object-contain w-16 h-16 rounded-lg sm:h-20 sm:w-20" alt={productName} />
                     <h3 className="text-lg font-semibold first-letter:capitalizew-full md:text-xl lg:text-2xl text-start ">{productName}</h3>
