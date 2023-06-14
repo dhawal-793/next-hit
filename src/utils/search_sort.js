@@ -9,7 +9,6 @@ export const sortAscending = (products) => {
     return SortedData
 }
 export const sortDescending = (products) => {
-    console.log(typeof products)
     const SortedData = products.sort((a, b) => {
         const nameA = a.productName.toUpperCase()
         const nameB = b.productName.toUpperCase()
@@ -23,14 +22,23 @@ function escapeRegExp(str) {
 }
 
 export const searchProducts = (searchTerm) => {
-    // console.log("Inside function searchProducts => ", searchTerm)
     if (searchTerm.trim() === "") return products
     const filteredProducts = products.filter(
-        (el) => el.productName.toLowerCase().includes(searchTerm)
+        (product) => {
+            if (!searchTerm) return true
+            const regex = new RegExp(escapeRegExp(searchTerm.trim()), 'gi')
+            var found = product.productName.match(regex) ||
+                product.description.match(regex) ||
+                product.category.match(regex)
+            if (found) return found;
+            if (!found) found = found || fuzzySearch(searchTerm, product.productName);
+            return (
+                found
+            )
+        }
     )
     return filteredProducts;
 }
-
 
 function levenshteinDistance(s1, s2) {
     const m = s1.length
