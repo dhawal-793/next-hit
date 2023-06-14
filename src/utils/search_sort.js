@@ -18,10 +18,13 @@ export const sortDescending = (products) => {
     return SortedData
 }
 
+function escapeRegExp(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') // $& means the whole matched string
+}
 
 export const searchProducts = (searchTerm) => {
     // console.log("Inside function searchProducts => ", searchTerm)
-    if(searchTerm.trim()==="") return products
+    if (searchTerm.trim() === "") return products
     const filteredProducts = products.filter(
         (el) => el.productName.toLowerCase().includes(searchTerm)
     )
