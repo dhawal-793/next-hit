@@ -1,9 +1,7 @@
 'use client'
 
-import { createContext, useContext, useMemo, useReducer } from "react";
-import { productReducer, actions, productReducerInitialState } from "./productsReducer";
-
-
+import { createContext, useContext, useEffect, useMemo, useReducer } from "react";
+import { productReducer, actions, productReducerInitialState, getView } from "./productsReducer";
 
 const ProductsContext = createContext(productReducerInitialState)
 
@@ -13,13 +11,15 @@ export const ProductsContextProvider = ({ children }) => {
     const contextValue = useMemo(() => {
         return {
             ...state,
-            // searchProducts: (searchTerm) => {
-            //     // console.log("Inside context searchProducts=> ", searchTerm)
-            //     dispatch({
-            //         type: actions.SEARCH,
-            //         payload: searchTerm
-            //     })
-            // },
+            initialize: () => {
+                dispatch({ type: actions.INIT })
+            },
+            filterProducts: (category, searchTerm) => {
+                dispatch({
+                    type: actions.FILTER,
+                    payload: { category, searchTerm }
+                })
+            },
             sortByAscending: () => {
                 dispatch({
                     type: actions.SORT_ASC,
@@ -29,19 +29,26 @@ export const ProductsContextProvider = ({ children }) => {
                 dispatch({
                     type: actions.SORT_DESC,
                 })
+            },
+            updateView: (view) => {
+                dispatch({
+                    type: actions.VIEW,
+                    payload: view,
+                });
             }
         }
     }, [state, dispatch])
 
 
-    // useEffect(() => {
-    //     // if (state !== initialState) {
-    //     //     localStorage.setItem(process.env.NEXT_PUBLIC_LOCAL_STORAGE_KEY, JSON.stringify(state));
-    //     //     //create and/or set a new localstorage variable called "state"
-    //     //     console.log("inside context if",state.bookmarks)
-    //     // }
-
-    // }, [state]);
+    useEffect(() => {
+        const view = getView()
+        if (view !== null) {
+            dispatch({
+                type: actions.VIEW,
+                payload: view,
+            });
+        }
+    }, []);
 
     return (
         <ProductsContext.Provider value={contextValue}>
