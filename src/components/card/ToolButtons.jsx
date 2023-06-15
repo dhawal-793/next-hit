@@ -14,9 +14,15 @@ const ToolButtons = ({ link, productData, productName }) => {
 
             {path === "/bookmarks" ? <Button handleClick={() => removeBookmark(productData)} text="Remove" /> :
                 bookmarks.some((obj) => obj['productName'] === productName) ?
-                    <Button text="Remove" handleClick={() => removeBookmark(productData)} />
+                    <Button text="Remove" handleClick={(e) => {
+                        e.stopPropagation()
+                        removeBookmark(productData)
+                    }} />
                     :
-                    <Button text="Bookmark" handleClick={() => addBookmark(productData)} />
+                    <Button text="Bookmark" handleClick={(e) => {
+                        e.stopPropagation()
+                        addBookmark(productData)
+                    }} />
             }
         </div>
     )
