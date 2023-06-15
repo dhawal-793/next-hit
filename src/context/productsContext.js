@@ -13,13 +13,13 @@ export const ProductsContextProvider = ({ children }) => {
     const contextValue = useMemo(() => {
         return {
             ...state,
-            searchProducts: (searchTerm) => {
-                // console.log("Inside context searchProducts=> ", searchTerm)
-                dispatch({
-                    type: actions.SEARCH,
-                    payload: searchTerm
-                })
-            },
+            // searchProducts: (searchTerm) => {
+            //     // console.log("Inside context searchProducts=> ", searchTerm)
+            //     dispatch({
+            //         type: actions.SEARCH,
+            //         payload: searchTerm
+            //     })
+            // },
             sortByAscending: () => {
                 dispatch({
                     type: actions.SORT_ASC,

@@ -16,7 +16,7 @@ const ToolContainer = ({ productsData }) => {
   return (
     <div className="flex flex-col items-center justify-center">
 
-      {productsData.length > 0 ?
+      {productsData?.length > 0 ?
         <>
 
           <div className="flex justify-between w-full p-5 pt-8">

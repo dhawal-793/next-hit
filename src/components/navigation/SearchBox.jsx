@@ -1,21 +1,41 @@
 
 'use-client'
-import { useProductsContext } from "@/context/productsContext";
-import { useState } from 'react'
+
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useState } from 'react'
 import { RiSearchLine } from "react-icons/ri"
 const SearchBox = () => {
 
     const [searchTerm, setSearchTerm] = useState("")
-    const { searchProducts } = useProductsContext()
 
+    const pathName = usePathname()
+    const router = useRouter()
+    const searchParams = useSearchParams()
+    const query = searchParams.get('term') || ""
 
     const search = (term) => {
         setSearchTerm(term)
-        searchProducts(term)
+        if (term.trim() !== "") {
+            router.push(`${pathName}/?term=${term}`)
+        }
+        else if (term.trim() === "") {
+            router.push(pathName)
+        }
     }
     const handleSearch = (e) => {
         e.preventDefault();
     }
+
+    useEffect(() => {
+        setSearchTerm(query)
+    }, [])
+    
+    useEffect(() => {
+        setSearchTerm(query)
+    }, [pathName])
+
+
+
     return (
         <form className="relative h-6 w-36 xs:w-48 sm:w-72 xs:h-8 sm:h-9 md:h-11 " onSubmit={handleSearch}>
             <input

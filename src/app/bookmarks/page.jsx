@@ -4,10 +4,15 @@ import ToolContainer from "@/components/card/ToolContainer"
 import { useEffect, useState } from "react"
 import { useBookmarkContext } from "@/context/bookmarkContext"
 import NoDataFound from "@/components/NoDataFound"
+import { useSearchParams } from "next/navigation"
+import { searchProducts } from "@/utils/search_sort"
 
 
 const Bookmarks = () => {
   const { bookmarks } = useBookmarkContext()
+  const searchParams = useSearchParams()
+  const term = searchParams.get('term') || ""
+  const bookmarkFilteredProducts = searchProducts(bookmarks, term)
   const [bookmarksLoading, setBookmarksLoading] = useState(true)
 
   useEffect(() => {
@@ -17,15 +22,14 @@ const Bookmarks = () => {
   useEffect(() => { }, [bookmarks])
 
 
-
   return (
     <>
       {
 
         bookmarksLoading ? <p>Loading...</p>
           :
-          bookmarks.length ?
-            <ToolContainer productsData={bookmarks} />
+          bookmarkFilteredProducts.length ?
+            <ToolContainer productsData={bookmarkFilteredProducts} />
             :
             <NoDataFound image="/images/sad-face.png" description="SORRY, NO BOOKMARKS IN SIGHT!" />
 

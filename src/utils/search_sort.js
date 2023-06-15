@@ -1,5 +1,4 @@
 
-import products from "@/DB/products.json"
 export const sortAscending = (products) => {
     const SortedData = products.sort((a, b) => {
         const nameA = a.productName.toUpperCase()
@@ -21,7 +20,7 @@ function escapeRegExp(str) {
     return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') // $& means the whole matched string
 }
 
-export const searchProducts = (searchTerm) => {
+export const searchProducts = (products, searchTerm) => {
     if (searchTerm.trim() === "") return products
     const filteredProducts = products.filter(
         (product) => {
