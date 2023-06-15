@@ -11,7 +11,7 @@ export const BookmarkContextProvider = ({ children }) => {
 
     const contextValue = useMemo(() => {
         return {
-            bookmarks: state.bookmarks,
+            ...state,
             addBookmark: (bookmark) => {
                 dispatch({
                     type: actions.ADD,
@@ -39,7 +39,7 @@ export const BookmarkContextProvider = ({ children }) => {
 
     useEffect(() => {
         // if (state !== initialState) {
-        //     localStorage.setItem(process.env.NEXT_PUBLIC_LOCAL_STORAGE_KEY, JSON.stringify(state));
+        //     localStorage.setItem(process.env.NEXT_PUBLIC_BOOKMARK_LOCAL_STORAGE_KEY, JSON.stringify(state));
         //     //create and/or set a new localstorage variable called "state"
         //     console.log("inside context if",state.bookmarks)
         // }
