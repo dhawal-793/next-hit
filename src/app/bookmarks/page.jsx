@@ -21,12 +21,10 @@ const Bookmarks = () => {
 
   useEffect(() => { }, [bookmarks])
 
-
   return (
     <>
       {
-
-        bookmarksLoading ? <p>Loading...</p>
+        bookmarksLoading ? <p className="py-5 text-center ">Loading...</p>
           :
           bookmarkFilteredProducts.length ?
             <ToolContainer productsData={bookmarkFilteredProducts} />

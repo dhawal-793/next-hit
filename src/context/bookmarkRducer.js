@@ -11,12 +11,12 @@ export const actions = {
 }
 
 export const getBookMarks = () => {
-    const bookmarkJson = localStorage.getItem(process.env.NEXT_PUBLIC_LOCAL_STORAGE_KEY)
+    const bookmarkJson = localStorage.getItem(process.env.NEXT_PUBLIC_BOOKMARK_LOCAL_STORAGE_KEY)
     return bookmarkJson;
 }
 
 export const updateBookMarks = (bookmarks) => {
-    localStorage.setItem(process.env.NEXT_PUBLIC_LOCAL_STORAGE_KEY, JSON.stringify(bookmarks));
+    localStorage.setItem(process.env.NEXT_PUBLIC_BOOKMARK_LOCAL_STORAGE_KEY, JSON.stringify(bookmarks));
 }
 
 export const reducer = (state, action) => {

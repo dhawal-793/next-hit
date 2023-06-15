@@ -22,7 +22,7 @@ const List = ({ productData }) => {
             <div className={`flex items-center justify-between h-24 p-2 hover:bg-[#E8E8E6] cursor-pointer  ${showDescription ? "rounded-t-lg" : "rounded-lg"}`} onClick={toggleShow}>
                 <div className="flex items-center flex-1 w-full gap-3 pl-2">
                     <img src={image} className="object-contain w-16 h-16 rounded-lg sm:h-20 sm:w-20" alt={productName} />
-                    <h3 className="text-lg font-semibold first-letter:capitalizew-full md:text-xl lg:text-2xl text-start ">{productName}</h3>
+                    <h3 className="w-full text-lg font-semibold first-letter:capitalize md:text-xl lg:text-2xl text-start ">{productName}</h3>
                 </div>
                 <div className="flex items-center justify-center gap-3 w-fit">
                     <div className="items-center justify-center hidden w-fit sm:flex">
