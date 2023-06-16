@@ -17,7 +17,7 @@ const SearchBox = () => {
     const searchParams = useSearchParams()
     const query = searchParams.get('term') || ""
 
-    
+
     let category = "";
     const urlCategory = pathName.split('/').pop()
     if (categories.includes(urlCategory)) {
@@ -34,7 +34,7 @@ const SearchBox = () => {
         }
         filterProducts(category, term.trim())
     }
-    
+
     const handleSearch = (e) => {
         e.preventDefault();
     }
@@ -58,6 +58,20 @@ const SearchBox = () => {
                 value={searchTerm}
                 onChange={(e) => search(e.target.value)}
             />
+            {
+                searchTerm.length > 0 && filteredProducts.length > 0 &&
+                <ul className="absolute hidden p-2 overflow-auto rounded-md filter-suggestions peer-focus:block bg-dark-primary max-h-[70vh] top-7 xs:top-9 sm:top-10 md:top-12 w-36 xs:w-48 sm:w-72">
+                    {filteredProducts.map(({ productName }) => {
+                        return (
+                            <li className="px-5 py-2 capitalize rounded-md cursor-pointer bg-dark-primary text-light-primary hover:bg-light-primary/40"
+                                key={productName}
+                                onClick={() => handlefilterClick(productName)}>
+                                {productName}
+                            </li>
+                        )
+                    })}
+                </ul>
+            }
             <button type='submit' className="absolute flex items-center justify-center text-lg font-bold -translate-y-1/2 right-3 top-1/2 bg-dark-primary text-light-primary sm:text-2xl ">
                 <RiSearchLine className='w-3 h-3 xs:h-5 xs:w-5' />
             </button>
