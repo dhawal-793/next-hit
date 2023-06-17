@@ -38,6 +38,10 @@
   .md-page-height {
     min-height: calc(100vh - 385.7px);
   }
+  .filter-suggestions::-webkit-scrollbar {
+    display: none;
+  }
+  
 }
 
 @layer components {
