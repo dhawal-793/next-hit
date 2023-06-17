@@ -26,7 +26,16 @@
   }
 
   .grid-view {
-    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(275px, auto));
+  }
+  .grid-view-xs {
+    grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+  }
+  .grid-view-sm {
+    grid-template-columns: repeat(auto-fit, minmax(305px, auto));
+  }
+  .grid-view-md {
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
   }
 
   .page-height {
