@@ -50,11 +50,13 @@
   .filter-suggestions::-webkit-scrollbar {
     display: none;
   }
-  
 }
 
 @layer components {
   .sidebarLinks {
     @apply flex items-center w-full gap-2 p-2 text-sm font-semibold rounded-lg cursor-pointer hover:bg-light-primary hover:text-dark-primary sm:text-lg;
+  }
+  .grid-layout {
+    @apply grid grid-view xs:grid-view-xs sm:grid-view-sm md:grid-view-md;
   }
 }
