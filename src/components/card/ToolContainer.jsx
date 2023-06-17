@@ -24,7 +24,7 @@ const ToolContainer = ({ productsData }) => {
             <ViewButtonGroup layout={view} toggleLayout={(view) => updateView(view)} />
             {pathName !== "/bookmarks" && <FilterButtonGroup />}
           </div>
-          <div className={` items-center justify-center w-full gap-4 p-5  ${view === "card" ? "grid grid-view" : "flex flex-col "}`}>
+          <div className={` items-center justify-center w-full gap-4 p-5  ${view === "card" ? "grid-layout" : "flex flex-col "}`}>
             {productsData.map((productData) => {
               return view === "card" ? <Card key={productData.productName} productData={productData} /> :
                 <List key={productData.productName} productData={productData} />
