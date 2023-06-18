@@ -32,7 +32,7 @@ const ToolContainer = ({ productsData }) => {
           </div>
         </>
         :
-        <NoDataFound image="/images/sad-face-2.png" description="sorry, out toolbox seems empty for this Search term!" />
+        <NoDataFound image="/images/sad-face-2.png" description="sorry, our toolbox seems empty for this Search term!" />
       }
     </div>
   )
