@@ -39,7 +39,6 @@ export const productReducer = (state, action) => {
             if (payload.category !== "" && payload.category !== "all") {
                 newFilteredProducts = state.products.filter(product => product.category.toLowerCase() === payload.category)
             }
-
             const filteredProducts = searchProducts(newFilteredProducts, payload.searchTerm)
             if (state.sort === "asc") {
                 const sortedAscendingData = sortAscending(filteredProducts)
@@ -53,12 +52,12 @@ export const productReducer = (state, action) => {
             return newState
         }
         case actions.SORT_ASC: {
-            const sortedAscendingData = sortAscending(state.products)
+            const sortedAscendingData = sortAscending(state.filteredProducts)
             const newState = { ...state, filteredProducts: sortedAscendingData, sort: "asc" }
             return newState
         }
         case actions.SORT_DESC: {
-            const sortedDescendingData = sortDescending(state.products)
+            const sortedDescendingData = sortDescending(state.filteredProducts)
             const newState = { ...state, filteredProducts: sortedDescendingData, sort: "desc" }
             return newState
         }
