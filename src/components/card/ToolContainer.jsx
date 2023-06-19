@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Card from "./Card"
 import List from "./List"
 import ViewButtonGroup from "../buttons/ViewButtonGroup"
@@ -9,12 +9,54 @@ import NoDataFound from "../NoDataFound"
 import { usePathname } from "next/navigation"
 import { useProductsContext } from "@/context/productsContext"
 
-const ToolContainer = ({ productsData }) => {
+const ITEMS_PER_PAGE = 10
+
+const ToolContainer = ({ data = null }) => {
+  const { filteredProducts, view, updateView, sort } = useProductsContext()
+  const productsData = data ? data : filteredProducts
   const pathName = usePathname()
-  const { view, updateView } = useProductsContext()
+
+  const [visibleData, setVisibleData] = useState([]);
+  const [page, setPage] = useState(ITEMS_PER_PAGE)
+  const [isLoading, setIsLoading] = useState(false)
+  const [allDataFetched, setAllDataFetched] = useState(false)
 
 
-  useEffect(() => { }, [pathName, view])
+  const handleScroll = () => {
+    const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+    if (scrollTop + clientHeight >= scrollHeight - 250) {
+      setPage((prevPage) => prevPage + ITEMS_PER_PAGE)
+    }
+  };
+
+  const debounce = (func, delay) => {
+    let timer;
+    return function (...args) {
+      clearTimeout(timer);
+      timer = setTimeout(() => func(...args), delay);
+    };
+  };
+
+  const handleDebouncedScroll = debounce(handleScroll, 200);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleDebouncedScroll);
+    return () => {
+      window.removeEventListener('scroll', handleDebouncedScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const newData = productsData.slice(0, page);
+    if (newData.length === productsData.length) {
+      setAllDataFetched(true);
+    }
+    setIsLoading(true);
+    setTimeout(() => {
+      setVisibleData(newData);
+      setIsLoading(false);
+    }, 500);
+  }, [page, productsData,sort]);
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -25,11 +67,12 @@ const ToolContainer = ({ productsData }) => {
             {pathName !== "/bookmarks" && <FilterButtonGroup />}
           </div>
           <div className={` items-center justify-center w-full gap-4 p-5  ${view === "card" ? "grid-layout" : "flex flex-col "}`}>
-            {productsData.map((productData) => {
+            {visibleData.map((productData) => {
               return view === "card" ? <Card key={productData.productName} productData={productData} /> :
                 <List key={productData.productName} productData={productData} />
             })}
           </div>
+          {!allDataFetched && isLoading && <div className="text-center ">Loading...</div>}
         </>
         :
         <NoDataFound image="/images/sad-face-2.png" description="sorry, our toolbox seems empty for this Search term!" />

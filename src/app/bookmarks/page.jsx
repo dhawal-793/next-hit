@@ -27,7 +27,7 @@ const Bookmarks = () => {
         bookmarksLoading ? <p className="py-5 text-center ">Loading...</p>
           :
           bookmarkFilteredProducts.length ?
-            <ToolContainer productsData={bookmarkFilteredProducts} />
+            <ToolContainer data={bookmarkFilteredProducts} />
             :
             <NoDataFound image="/images/sad-face.png" description="SORRY, NO BOOKMARKS IN SIGHT!" />
 

@@ -11,9 +11,6 @@ export const ProductsContextProvider = ({ children }) => {
     const contextValue = useMemo(() => {
         return {
             ...state,
-            initialize: () => {
-                dispatch({ type: actions.INIT })
-            },
             filterProducts: (category, searchTerm) => {
                 dispatch({
                     type: actions.FILTER,
