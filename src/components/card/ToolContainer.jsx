@@ -24,7 +24,6 @@ const ToolContainer = ({ data = null }) => {
 
   const handleScroll = () => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
-    console.log("scrollTop => ", scrollTop, "\n scrollHeight => ", scrollHeight, "\n clientHeight => ", clientHeight)
     if (scrollTop + clientHeight >= scrollHeight - 250) {
       setPage((prevPage) => prevPage + ITEMS_PER_PAGE)
     }
