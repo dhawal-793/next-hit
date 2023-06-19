@@ -33,7 +33,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className='flex items-center gap-3'>
-                    <div className='items-center hidden mr-3 text-lg font-bold xl:flex lg:space-x-4'>
+                    <div className={`items-center hidden mr-3 text-lg font-bold ${url === "/community" || url === "/about" ? "lg:flex" : "xl:flex"} lg:space-x-4`}>
                         <Link href="/" className={`hover:bg-dark-primary hover:text-light-primary rounded-lg px-3 py-1 ${isActive("") && "bg-dark-primary text-light-primary"}`}>
                             Home
                         </Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
                             Community
                         </Link>
                     </div>
-                    <SearchBox />
+                    {url !== "/community" && url !== "/about" && <SearchBox />}
                 </div>
             </nav>
             <Sidebar navOpen={navOpen} setNavOpen={setNavOpen} />
