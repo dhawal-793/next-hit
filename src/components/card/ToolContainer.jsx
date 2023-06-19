@@ -11,8 +11,9 @@ import { useProductsContext } from "@/context/productsContext"
 
 const ITEMS_PER_PAGE = 10
 
-const ToolContainer = ({ productsData }) => {
-  const { view, updateView } = useProductsContext()
+const ToolContainer = ({ data = null }) => {
+  const { filteredProducts, view, updateView, sort } = useProductsContext()
+  const productsData = data ? data : filteredProducts
   const pathName = usePathname()
 
   const [visibleData, setVisibleData] = useState([]);
@@ -56,12 +57,7 @@ const ToolContainer = ({ productsData }) => {
       setVisibleData(newData);
       setIsLoading(false);
     }, 500);
-  }, [page, productsData]);
-
-  useEffect(() => {
-  }, [pathName, view])
-
-
+  }, [page, productsData,sort]);
 
   return (
     <div className="flex flex-col items-center justify-center">
