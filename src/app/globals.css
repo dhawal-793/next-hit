@@ -39,6 +39,12 @@
   }
 
   .page-height {
+    min-height: calc(100vh - 55.7px);
+  }
+  .md-page-height {
+    min-height: calc(100vh - 68.7px);
+  }
+  /* .page-height {
     min-height: calc(100vh - 399.7px);
   }
   .sm-page-height {
@@ -46,7 +52,7 @@
   }
   .md-page-height {
     min-height: calc(100vh - 385.7px);
-  }
+  } */
   .filter-suggestions::-webkit-scrollbar {
     display: none;
   }

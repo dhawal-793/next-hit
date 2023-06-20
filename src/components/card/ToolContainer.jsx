@@ -8,6 +8,7 @@ import FilterButtonGroup from "../buttons/FilterButtonGroup"
 import NoDataFound from "../NoDataFound"
 import { usePathname } from "next/navigation"
 import { useProductsContext } from "@/context/productsContext"
+import Loader from "../Loader"
 
 const ITEMS_PER_PAGE = 10
 
@@ -18,13 +19,13 @@ const ToolContainer = ({ data = null }) => {
 
   const [visibleData, setVisibleData] = useState([]);
   const [page, setPage] = useState(ITEMS_PER_PAGE)
-  const [isLoading, setIsLoading] = useState(false)
+  const [isFetchingData, setIsFetchingData] = useState(false)
   const [allDataFetched, setAllDataFetched] = useState(false)
 
 
   const handleScroll = () => {
     const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
-    if (scrollTop + clientHeight >= scrollHeight - 250) {
+    if (scrollTop + clientHeight >= scrollHeight - 400) {
       setPage((prevPage) => prevPage + ITEMS_PER_PAGE)
     }
   };
@@ -37,7 +38,7 @@ const ToolContainer = ({ data = null }) => {
     };
   };
 
-  const handleDebouncedScroll = debounce(handleScroll, 200);
+  const handleDebouncedScroll = debounce(handleScroll, 400);
 
   useEffect(() => {
     window.addEventListener('scroll', handleDebouncedScroll);
@@ -51,14 +52,16 @@ const ToolContainer = ({ data = null }) => {
     if (newData.length === productsData.length) {
       setAllDataFetched(true);
     }
-    setIsLoading(true);
+    setIsFetchingData(true);
     setTimeout(() => {
       setVisibleData(newData);
-      setIsLoading(false);
+      setIsFetchingData(false);
     }, 500);
-  }, [page, productsData,sort]);
+  }, [page, productsData, sort]);
+
 
   return (
+
     <div className="flex flex-col items-center justify-center">
       {productsData?.length > 0 ?
         <>
@@ -72,8 +75,9 @@ const ToolContainer = ({ data = null }) => {
                 <List key={productData.productName} productData={productData} />
             })}
           </div>
-          {!allDataFetched && isLoading && <div className="text-center ">Loading...</div>}
+          {!allDataFetched && isFetchingData && <Loader />}
         </>
+
         :
         <NoDataFound image="/images/sad-face-2.png" description="sorry, our toolbox seems empty for this Search term!" />
       }

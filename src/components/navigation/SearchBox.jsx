@@ -39,14 +39,15 @@ const SearchBox = () => {
         e.preventDefault();
     }
 
-
     useEffect(() => {
         setSearchTerm(query)
         filterProducts(category, query.trim())
     }, [pathName])
 
     useEffect(() => {
-        filterProducts(category, searchTerm.trim())
+        if (searchTerm.trim() !== "") {
+            filterProducts(category, searchTerm.trim())
+        }
     }, [searchTerm])
 
     return (
@@ -60,12 +61,12 @@ const SearchBox = () => {
             />
             {
                 searchTerm.length > 0 && filteredProducts.length > 0 &&
-                <ul className="absolute hidden p-2 overflow-auto rounded-md filter-suggestions peer-focus:block bg-dark-primary max-h-[70vh] top-7 xs:top-9 sm:top-10 md:top-12 w-36 xs:w-48 sm:w-72">
+                <ul className="absolute z-40 p-2 hidden overflow-auto rounded-md filter-suggestions peer-focus:block bg-dark-primary max-h-[70vh] top-7 xs:top-9 sm:top-10 md:top-12 w-36 xs:w-48 sm:w-72">
                     {filteredProducts.map(({ productName }) => {
                         return (
-                            <li className="px-5 py-2 capitalize rounded-md cursor-pointer bg-dark-primary text-light-primary hover:bg-light-primary/40"
+                            <li role="button" className="z-0 px-5 py-2 capitalize rounded-md cursor-pointer bg-dark-primary text-light-primary hover:bg-light-primary/40"
                                 key={productName}
-                                onClick={() => handlefilterClick(productName)}>
+                                onMouseDown={() => search(productName)}>
                                 {productName}
                             </li>
                         )
