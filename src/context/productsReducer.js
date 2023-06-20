@@ -15,7 +15,7 @@ export const updateView = (view) => {
 
 export const productReducerInitialState = {
     products: sortAscending(productsData),
-    filteredProducts: sortAscending(productsData),
+    filteredProducts: [],
     view: "card",
     sort: "asc",
 };
@@ -31,9 +31,9 @@ export const actions = {
 export const productReducer = (state, action) => {
     const { type, payload } = action;
     switch (type) {
-        case actions.INIT: {
-            return { ...state, filteredProducts: state.products }
-        }
+        // case actions.INIT: {
+        //     return { ...state, products: sortAscending(productsData), filteredProducts: sortAscending(productsData) }
+        // }
         case actions.FILTER: {
             let newFilteredProducts = state.products;
             if (payload.category !== "" && payload.category !== "all") {

@@ -38,6 +38,9 @@ export const ProductsContextProvider = ({ children }) => {
 
 
     useEffect(() => {
+        // dispatch({
+        //     type: actions.INIT,
+        // })
         const view = getView()
         if (view !== null) {
             dispatch({
