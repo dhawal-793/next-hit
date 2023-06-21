@@ -37,6 +37,7 @@ const SearchBox = () => {
 
     const handleSearch = (e) => {
         e.preventDefault();
+        e.target.querySelector('input').blur();
     }
 
     useEffect(() => {
