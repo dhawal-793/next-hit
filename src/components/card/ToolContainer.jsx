@@ -9,6 +9,7 @@ import NoDataFound from "../NoDataFound"
 import { usePathname } from "next/navigation"
 import { useProductsContext } from "@/context/productsContext"
 import Loader from "../Loader"
+import FullPageContainer from "../FullPageContainer"
 
 const ITEMS_PER_PAGE = 10
 
@@ -19,6 +20,7 @@ const ToolContainer = ({ data = null }) => {
 
   const [visibleData, setVisibleData] = useState([]);
   const [page, setPage] = useState(ITEMS_PER_PAGE)
+  const [isLoading, setIsLoading] = useState(true)
   const [isFetchingData, setIsFetchingData] = useState(false)
   const [allDataFetched, setAllDataFetched] = useState(false)
 
@@ -38,7 +40,7 @@ const ToolContainer = ({ data = null }) => {
     };
   };
 
-  const handleDebouncedScroll = debounce(handleScroll, 400);
+  const handleDebouncedScroll = debounce(handleScroll, 200);
 
   useEffect(() => {
     window.addEventListener('scroll', handleDebouncedScroll);
@@ -49,7 +51,7 @@ const ToolContainer = ({ data = null }) => {
 
   useEffect(() => {
     const newData = productsData.slice(0, page);
-    if (newData.length === productsData.length) {
+    if (!isLoading && newData.length === productsData.length) {
       setAllDataFetched(true);
     }
     setIsFetchingData(true);
@@ -59,29 +61,45 @@ const ToolContainer = ({ data = null }) => {
     }, 500);
   }, [page, productsData, sort]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+      window.scrollTo(0, 0)
+    }, 500)
+  }, [])
+
+  // useEffect(() => {  }, [isFetchingData,allDataFetched])
 
   return (
+    <>
+      {isLoading ?
+        <FullPageContainer>
+          <Loader width="w-12" height="h-12" />
+        </FullPageContainer> :
+        <div className="flex flex-col items-center justify-center">
+          {productsData?.length > 0 ?
+            <>
+              <div className="flex justify-between w-full p-5 pt-8">
+                <ViewButtonGroup layout={view} toggleLayout={(view) => updateView(view)} />
+                {pathName !== "/bookmarks" && <FilterButtonGroup />}
+              </div>
+              <div className={` items-center justify-center w-full gap-4 p-5  ${view === "card" ? "grid-layout" : "flex flex-col "}`}>
+                {visibleData.map((productData) => {
+                  return view === "card" ? <Card key={productData.productName} productData={productData} /> :
+                    <List key={productData.productName} productData={productData} />
+                })}
+              </div>
+              {!allDataFetched && isFetchingData && <Loader />}
+            </>
 
-    <div className="flex flex-col items-center justify-center">
-      {productsData?.length > 0 ?
-        <>
-          <div className="flex justify-between w-full p-5 pt-8">
-            <ViewButtonGroup layout={view} toggleLayout={(view) => updateView(view)} />
-            {pathName !== "/bookmarks" && <FilterButtonGroup />}
-          </div>
-          <div className={` items-center justify-center w-full gap-4 p-5  ${view === "card" ? "grid-layout" : "flex flex-col "}`}>
-            {visibleData.map((productData) => {
-              return view === "card" ? <Card key={productData.productName} productData={productData} /> :
-                <List key={productData.productName} productData={productData} />
-            })}
-          </div>
-          {!allDataFetched && isFetchingData && <Loader />}
-        </>
-
-        :
-        <NoDataFound image="/images/sad-face-2.png" description="sorry, our toolbox seems empty for this Search term!" />
+            :
+            <FullPageContainer>
+              <NoDataFound image="/images/sad-face-2.png" description="sorry, our toolbox seems empty for this Search term!" />
+            </FullPageContainer>
+          }
+        </div>
       }
-    </div>
+    </>
   )
 }
 
