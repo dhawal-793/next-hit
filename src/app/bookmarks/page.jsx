@@ -6,6 +6,7 @@ import { useBookmarkContext } from "@/context/bookmarkContext"
 import NoDataFound from "@/components/NoDataFound"
 import { useSearchParams } from "next/navigation"
 import { searchProducts } from "@/utils/search_sort"
+import FullPageContainer from "@/components/FullPageContainer"
 
 
 const Bookmarks = () => {
@@ -29,7 +30,9 @@ const Bookmarks = () => {
           bookmarkFilteredProducts.length ?
             <ToolContainer data={bookmarkFilteredProducts} />
             :
-            <NoDataFound image="/images/sad-face.png" description="SORRY, NO BOOKMARKS IN SIGHT!" />
+            <FullPageContainer>
+              <NoDataFound image="/images/sad-face.png" description="SORRY, NO BOOKMARKS IN SIGHT!" />
+            </FullPageContainer>
 
       }
     </>
