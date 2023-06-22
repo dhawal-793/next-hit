@@ -6,11 +6,12 @@ import { useEffect, useState } from 'react'
 import { RiSearchLine } from "react-icons/ri"
 import { useProductsContext } from "@/context/productsContext";
 import categories from "@/data/constants";
+import SearchSuggestions from "./SearchSuggestions";
 
 const SearchBox = () => {
 
     const [searchTerm, setSearchTerm] = useState("")
-    const { filteredProducts, filterProducts } = useProductsContext()
+    const { filterProducts, suggestions } = useProductsContext()
 
     const pathName = usePathname()
     const router = useRouter()
@@ -61,18 +62,7 @@ const SearchBox = () => {
                 onChange={(e) => search(e.target.value)}
             />
             {
-                searchTerm.length > 0 && filteredProducts.length > 0 &&
-                <ul className="absolute z-40 p-2 hidden overflow-auto rounded-md filter-suggestions peer-focus:block bg-dark-primary max-h-[70vh] top-7 xs:top-9 sm:top-10 md:top-12 w-36 xs:w-48 sm:w-72">
-                    {filteredProducts.map(({ productName }) => {
-                        return (
-                            <li role="button" className="z-0 px-5 py-2 capitalize rounded-md cursor-pointer bg-dark-primary text-light-primary hover:bg-light-primary/40"
-                                key={productName}
-                                onMouseDown={() => search(productName)}>
-                                {productName}
-                            </li>
-                        )
-                    })}
-                </ul>
+                searchTerm.length > 0 && suggestions.length > 0 && <SearchSuggestions suggestions={suggestions} search={search} />
             }
             <button type='submit' className="absolute flex items-center justify-center text-lg font-bold -translate-y-1/2 right-3 top-1/2 bg-dark-primary text-light-primary sm:text-2xl ">
                 <RiSearchLine className='w-3 h-3 xs:h-5 xs:w-5' />
