@@ -1,5 +1,26 @@
 [
   {
+    "productName": "JSONView",
+    "category": "extension",
+    "image": "https://shorturl.at/uvFQ9",
+    "link": "https://chrome.google.com/webstore/detail/jsonview/gmegofmjomhknnokphhckolhcffdaihd",
+    "description": "This JSONView converts the JSON content into an understandable format and esay to view."
+  },
+  {
+    "productName": "Netlify",
+    "category": "tools",
+    "image": "https://bit.ly/3qCeSLa",
+    "link": "https://www.opensourceforu.com/wp-content/uploads/2022/02/netlify-logo.png",
+    "description": "Netlify provides free hosting, deploying, and many more service to the user so the user doesn't need to worry about the hosting."
+  },
+  {
+    "productName": "MDN Web Docs",
+    "category": "tools",
+    "image": "https://bit.ly/3PuJPuO ",
+    "link": " https://developer.mozilla.org/en-US/ ",
+    "description": " Provides information about Open Web technologies including HTML, CSS, and APIs"
+  },
+  {
     "productName": "Magic Eraser",
     "category": "tools",
     "image": "https://bit.ly/3qCeSLa",
@@ -12,6 +33,27 @@
     "image": "https://bit.ly/3P16OO5",
     "link": "https://bit.ly/42xjijx",
     "description": "Produce beautiful documents starting from gallery of LaTeX templates for CVs."
+  },
+  {
+    "productName": "w3schools",
+    "category": "coding",
+    "image": "https://bit.ly/3JiwHFx",
+    "link": "https://w3schools.com/",
+    "description": "Tutorials on web development, programming languages, and other related technologies"
+  },
+  {
+    "productName": "MyEmulator",
+    "category": "Gaming",
+    "image": "https://bit.ly/3NBzUm8",
+    "link": "https://myemulator.online/",
+    "description": "Play classic video games from various gaming consoles directly in their web browsers."
+  },
+  {
+    "productName": "Javatpoint",
+    "category": "coding",
+    "image": "https://bit.ly/4635MqZ",
+    "link": "https://www.javatpoint.com/",
+    "description": "Study materials such as tutorials, articles, and resources for Java programming and other related technologies"
   },
   {
     "productName": "Freepik",
@@ -34,7 +76,7 @@
     "link": "https://bit.ly/3oXcaPL",
     "description": "The #1 way college students & early graduates get Internships & Jobs"
   },
-   {
+  {
     "productName": "Reduce Images",
     "category": "tools",
     "image": "https://ibb.co/SmKdz1X",
@@ -478,7 +520,7 @@
   {
     "productName": "CSSPortal",
     "category": "web",
-    "image":"https://www.cssportal.com/assets/images/cssicon.png",
+    "image": "https://www.cssportal.com/assets/images/cssicon.png",
     "link": "https://www.cssportal.com/",
     "description": "CSS Portal is home to many examples of CSS and how it can be used in website design."
   },
@@ -649,6 +691,13 @@
     "image": "https://bit.ly/3ktuJZG",
     "link": "https://www.flaticon.com/",
     "description": "Collection of free vector icons for web design and graphic design."
+  },
+  {
+    "productName": "Fireship",
+    "category": "web",
+    "image": "https://avatars.githubusercontent.com/u/46283609?s=280&v=4",
+    "link": "https://fireship.io/lessons/tailwind-tutorial/",
+    "description": "Fireship provides blazingly fast && highly-amusing tricks for TailwindCss."
   },
   {
     "productName": "Friv",
@@ -863,7 +912,7 @@
   {
     "productName": "LeetSync",
     "category": "extensions",
-     "image": "https://bit.ly/43lwVDw",
+    "image": "https://bit.ly/43lwVDw",
     "link": "https://chrome.google.com/webstore/detail/leetsync-leetcode-to-gith/ppkbejeolfcbaomanmbpjdbkfcjfhjnd",
     "description": "Integrate Leetcode submission to GitHub"
   },
@@ -969,7 +1018,7 @@
     "productName": "Download Hub",
     "category": "movies",
     "image": "https://bit.ly/3Kd6eIZ",
-    "link": "https://downloadhub.health/",
+    "link": "https://downloadhub.dance/",
     "description": "Download HD quality movies and series"
   },
   {
@@ -1215,7 +1264,7 @@
     "category": "extensions",
     "image": "https://rb.gy/r2if4",
     "link": "https://rb.gy/muo7f",
-    "description": "Extract CSS and build beautiful styleguides."
+    "description": "Extract CSS and build beautiful style guides."
   },
   {
     "productName": "I2Symbol",
@@ -1408,7 +1457,7 @@
   },
   {
     "productName": "Piped",
-    "category": "remote",
+    "category": "movies",
     "image": "https://bit.ly/45zisFw",
     "link": "https://piped.kavin.rocks",
     "description": "An alternative privacy-friendly YouTube frontend which is efficient by design."
@@ -1502,7 +1551,7 @@
     "category": "UI",
     "image": "https://bit.ly/45COMri",
     "link": "https://bit.ly/45BOgd8",
-    "description": "UI Kits avaiable in various format like figma, Xd, PSD, AI etc."
+    "description": "UI Kits available in various format like figma, Xd, PSD, AI etc."
   },
   {
     "productName": "3D Icons",
@@ -1595,148 +1644,155 @@
     "link": "https://www.favicon.cc/",
     "description": "Favicon.cc is a website that offers a simple and user-friendly platform for creating and customizing favicons."
   },
-{
-  "productName": "DALL·E",
-  "category": "ai",
-  "image": "https://bit.ly/3oICzAN",
-  "link": "https://openai.com/dall-e-2",
-  "description": "An AI system that can create realistic images and art from a description in natural language."
-},
+  {
+    "productName": "DALL·E",
+    "category": "ai",
+    "image": "https://bit.ly/3oICzAN",
+    "link": "https://openai.com/dall-e-2",
+    "description": "An AI system that can create realistic images and art from a description in natural language."
+  },
 
-{
-  "productName": "Novoresume",
-  "category": "resume",
-  "image": "https://bit.ly/3P09nA5",
-  "link": "https://novoresume.com/",
-  "description": "Online resume builder."
-},
-{
-  "productName": "Gencraft",
-  "category": "AI",
-  "image": "https://bit.ly/3Nji330",
-  "link": "https://gencraft.com/",
-  "description": "Watch your prompts turn into beautiful designs, images, and artworks."
-},
-{
-  "productName": "WatchSeriesHD",
-  "category": "movies",
-  "image": "https://rb.gy/xxgtv",
-  "link": "https://watchserieshd.live/",
-  "description": "Stream movies and series in HD quality for free"
-},
-{
-  "productName": "Uiverse.io",
-  "category": "UI",
-  "image": "http://bit.ly/3X19kpw",
-  "link": "https://uiverse.io/",
-  "description": "Discover and customize free, open-source CSS and HTML UI elements, through this tool"
-},
-{
-  "productName": "Leetcode",
-  "category": "coding",
-  "image": "https://leetcode.com/static/images/LeetCode_logo.png",
-  "link": "https://leetcode.com/",
-  "description": "A platform for practicing coding skills and preparing for technical interviews."
-},
-{
-  "productName": "Atcoder",
-  "category": "coding",
-  "image": "http://morningpitch.com/wp-content/uploads/2020/10/download.png",
-  "link": " https://atcoder.jp/",
-  "description": "One of the best platforms for Cp, it was created in Japan"
-},
-{
-  "productName": "Codeforces",
-  "category": "coding",
-  "image": "https://tinyurl.com/3fjue7y6",
-  "link": " https://codeforces.com/",
-  "description": "A competitive programming platform with challenging contests and an active community."
-},
-{
-  "productName": "Codechef",
-  "category": "coding",
-  "image": "https://tinyurl.com/5cx6fp35",
-  "link": "https://www.codechef.com/",
-  "description": "An online community for programmers to improve their skills through contests and challenges."
-},
-{
-  "productName": "SPOJ",
-  "category": "coding",
-  "image": "https://tinyurl.com/yndmds67",
-  "link": "https://www.spoj.com/",
-  "description": "An online judge system with a large collection of programming problems for practice and contests."
-},
-{
-  "productName": "Hackerrank",
-  "category": "coding",
-  "image": "https://tinyurl.com/247ewu64",
-  "link": "https://www.hackerrank.com/",
-  "description": "A coding platform with challenges, contests, and interview preparation resources."
-},
-{
-  "productName": "Hackerearth",
-  "category": "coding",
-  "image": "https://tinyurl.com/4rzch6cp",
-  "link": "https://www.hackerearth.com/",
-  "description": "A platform for skill assessment, coding competitions, and hiring developers."
-},
-{
-  "productName": "CSES",
-  "category": "coding",
-  "image": "https://cses.fi/logo.png?1",
-  "link": "https://cses.fi/",
-  "description": "Competitive Programming Archive featuring a wide range of algorithmic problems."
-},
-{
-  "productName": "Project Euler",
-  "category": "coding",
-  "image": "https://tinyurl.com/4kznjfju",
-  "link": " https://projecteuler.net/",
-  "description": "A collection of challenging mathematical and computational problems."
-},
-{
-  "productName": "Topcoder",
-  "category": "coding",
-  "image": "https://tinyurl.com/y66jd8mt",
-  "link": "https://www.topcoder.com/",
-  "description": "A platform for competitive programming and software development challenges."
-},
-{
-  "productName": "GeeksForGeeks",
-  "category": "coding",
-  "image": "https://t.ly/vKJ8",
-  "link": "https://www.geeksforgeeks.org/",
-  "description": " A portal for computer science resources, tutorials, and coding practice."
-},
-{
-  "productName": "Google Fonts",
-  "category": "tools",
-  "image": "https://tinyurl.com/554n6ry6",
-  "link": "https://fonts.google.com/",
-  "description": "Free and open source font families."
-},
-{
-  "productName": "StackBlitz",
-  "category": "Online Code Editor",
-  "image": "https://avatars.githubusercontent.com/u/28635252?s=200&v=4",
-  "link": "https://stackblitz.com/",
-  "description": "Instant dev experiences: Click, code, no local setup required."
-},
-{
-  "productName": "Ant Design",
-  "category": "tools",
-  "image": "https://avatars0.githubusercontent.com/u/12101536?s=280&v=4",
-  "link": "https://ant.design/",
-  "description": "Ant Design is a popular Frontend UI library of React components which makes development code efficient, clean and fast"
-},
-{
-  "productName": "Roadmap.sh",
-  "category": "tools",
-  "image": "https://i.pinimg.com/originals/14/ce/13/14ce13dff4ba3a6255916b128dd9ec57.png",
-  "link": "https://roadmap.sh/",
-  "description": "Roadmap.sh is an effort to create roadmaps and guides to help developers in picking up the path"
-},
-{
+  {
+    "productName": "Novoresume",
+    "category": "resume",
+    "image": "https://bit.ly/3P09nA5",
+    "link": "https://novoresume.com/",
+    "description": "Online resume builder."
+  },
+  {
+    "productName": "Gencraft",
+    "category": "AI",
+    "image": "https://bit.ly/3Nji330",
+    "link": "https://gencraft.com/",
+    "description": "Watch your prompts turn into beautiful designs, images, and artworks."
+  },
+  {
+    "productName": "WatchSeriesHD",
+    "category": "movies",
+    "image": "https://rb.gy/xxgtv",
+    "link": "https://watchserieshd.live/",
+    "description": "Stream movies and series in HD quality for free"
+  },
+  {
+    "productName": "Uiverse.io",
+    "category": "UI",
+    "image": "http://bit.ly/3X19kpw",
+    "link": "https://uiverse.io/",
+    "description": "Discover and customize free, open-source CSS and HTML UI elements, through this tool"
+  },
+  {
+    "productName": "Leetcode",
+    "category": "coding",
+    "image": "https://leetcode.com/static/images/LeetCode_logo.png",
+    "link": "https://leetcode.com/",
+    "description": "A platform for practicing coding skills and preparing for technical interviews."
+  },
+  {
+    "productName": "Atcoder",
+    "category": "coding",
+    "image": "http://morningpitch.com/wp-content/uploads/2020/10/download.png",
+    "link": " https://atcoder.jp/",
+    "description": "One of the best platforms for Cp, it was created in Japan"
+  },
+  {
+    "productName": "Codeforces",
+    "category": "coding",
+    "image": "https://tinyurl.com/3fjue7y6",
+    "link": " https://codeforces.com/",
+    "description": "A competitive programming platform with challenging contests and an active community."
+  },
+  {
+    "productName": "Codechef",
+    "category": "coding",
+    "image": "https://tinyurl.com/5cx6fp35",
+    "link": "https://www.codechef.com/",
+    "description": "An online community for programmers to improve their skills through contests and challenges."
+  },
+  {
+    "productName": "SPOJ",
+    "category": "coding",
+    "image": "https://tinyurl.com/yndmds67",
+    "link": "https://www.spoj.com/",
+    "description": "An online judge system with a large collection of programming problems for practice and contests."
+  },
+  {
+    "productName": "Hackerrank",
+    "category": "coding",
+    "image": "https://tinyurl.com/247ewu64",
+    "link": "https://www.hackerrank.com/",
+    "description": "A coding platform with challenges, contests, and interview preparation resources."
+  },
+  {
+    "productName": "Hackerearth",
+    "category": "coding",
+    "image": "https://tinyurl.com/4rzch6cp",
+    "link": "https://www.hackerearth.com/",
+    "description": "A platform for skill assessment, coding competitions, and hiring developers."
+  },
+  {
+    "productName": "CSES",
+    "category": "coding",
+    "image": "https://cses.fi/logo.png?1",
+    "link": "https://cses.fi/",
+    "description": "Competitive Programming Archive featuring a wide range of algorithmic problems."
+  },
+  {
+    "productName": "Project Euler",
+    "category": "coding",
+    "image": "https://tinyurl.com/4kznjfju",
+    "link": " https://projecteuler.net/",
+    "description": "A collection of challenging mathematical and computational problems."
+  },
+  {
+    "productName": "Topcoder",
+    "category": "coding",
+    "image": "https://tinyurl.com/y66jd8mt",
+    "link": "https://www.topcoder.com/",
+    "description": "A platform for competitive programming and software development challenges."
+  },
+  {
+    "productName": "GeeksForGeeks",
+    "category": "coding",
+    "image": "https://t.ly/vKJ8",
+    "link": "https://www.geeksforgeeks.org/",
+    "description": " A portal for computer science resources, tutorials, and coding practice."
+  },
+  {
+    "productName": "Google Fonts",
+    "category": "tools",
+    "image": "https://tinyurl.com/554n6ry6",
+    "link": "https://fonts.google.com/",
+    "description": "Free and open source font families."
+  },
+  {
+    "productName": "StackBlitz",
+    "category": "Online Code Editor",
+    "image": "https://avatars.githubusercontent.com/u/28635252?s=200&v=4",
+    "link": "https://stackblitz.com/",
+    "description": "Instant dev experiences: Click, code, no local setup required."
+  },
+  {
+    "productName": "freeCodeCamp",
+    "category": "tools",
+    "image": "https://design-style-guide.freecodecamp.org/downloads/fcc_primary_small.jpg",
+    "link": "https://www.freecodecamp.org/",
+    "description": "freeCodeCamp is a non-profit organization providing free online coding courses and a supportive community."
+  },
+  {
+    "productName": "Ant Design",
+    "category": "tools",
+    "image": "https://avatars0.githubusercontent.com/u/12101536?s=280&v=4",
+    "link": "https://ant.design/",
+    "description": "Ant Design is a popular Frontend UI library of React components which makes development code efficient, clean and fast"
+  },
+  {
+    "productName": "Roadmap.sh",
+    "category": "tools",
+    "image": "https://i.pinimg.com/originals/14/ce/13/14ce13dff4ba3a6255916b128dd9ec57.png",
+    "link": "https://roadmap.sh/",
+    "description": "Roadmap.sh is an effort to create roadmaps and guides to help developers in picking up the path"
+  },
+  {
     "productName": "felxjobs",
     "category": "remote",
     "image": "https://tinyurl.com/ybfchtmw",
@@ -1755,7 +1811,7 @@
     "category": "remote",
     "image": "https://tinyurl.com/48bja2rc",
     "link": "https://www.crossover.com/",
-    "description": "Find a full time remote job" 
+    "description": "Find a full time remote job"
   },
   {
     "productName": "INSIDEA",
@@ -1798,6 +1854,159 @@
     "image": "https://bit.ly/43XLyga",
     "link": "https://www.codewars.com/",
     "description": "Programming exercises to improve coding skills."
+  },
+  {
+    "productName": "HyperWrite",
+    "category": "ai",
+    "image": "https://rb.gy/62tkp",
+    "link": "https://www.hyperwriteai.com/",
+    "description": "Uses AI to help you generate ideas, write content, and edit your work."
+  },
+  {
+    "productName": "cssbattle",
+    "category": "Coding",
+    "image": "https://bit.ly/3NAzVXv",
+    "link": "https://cssbattle.dev/",
+    "description": "Write CSS code in real-time"
+  },
+  {
+    "productName": "1337x",
+    "category": "movies",
+    "image": "https://shorturl.at/afjwQ",
+    "link": "https://1337x.st/",
+    "description": "1337x is a popular torrent website offering a wide range of downloadable content for users."
+  },
+  {
+    "productName": "tutorialspoint",
+    "category": "Learning",
+    "image": "https://www.tutorialspoint.com/images/logo.png?v2",
+    "link": "https://www.tutorialspoint.com/nodejs/index.htm",
+    "description": "Tutorials Point provide the best learning material on technical and non-technical subjects."
+  },
+  {
+    "productName": "jschallenger",
+    "category": "Coding",
+    "image": "https://tinyurl.com/5n6vbc7f",
+    "link": "https://www.jschallenger.com/",
+    "description": "Learn Javascript online by solving coding exercises."
+  },
+  {
+    "productName": "Slides AI",
+    "category": "ai",
+    "image": "bit.ly/3CCVi3S",
+    "link": "https://www.slidesai.io/",
+    "description": "Create and enhance presentation slides"
+  },
+  {
+    "productName": "AutoDraw",
+    "category": "ai",
+    "image": "bit.ly/3Nxb5rj",
+    "link": "https://www.autodraw.com/",
+    "description": "Provides suggestions and predictions to create drawings"
+  },
+  {
+    "productName": "Starrytars",
+    "category": "ai",
+    "image": "bit.ly/42L7M4b",
+    "link": "https://starryai.com/starrytars",
+    "description": "Create high-quality avatars with AI in minutes"
+  },
+  {
+    "productName": "Uizard",
+    "category": "ai",
+    "image": "bit.ly/3Pi0uSi",
+    "link": "https://uizard.io/",
+    "description": "Design wireframes, mockups, and prototypes in minutes"
+  },
+  {
+    "productName": "DESIGNS.AI",
+    "category": "resume",
+    "image": "https://tinyurl.com/3c55se3w",
+    "link": "https://designs.ai/design-types/resumes",
+    "description": "Build Professional resumes effortlessly with Designs.AI"
+  },
+  {
+    "productName": "RESUME WORDED",
+    "category": "resume",
+    "image": "https://resumeworded.com/",
+    "link": "https://resumeworded.com/",
+    "description": "Your personal resume & LinkedIn coach"
+  },
+  {
+    "productName": "These resumes do not exist",
+    "category": "resume",
+    "image": "https://thisresumedoesnotexist.com/",
+    "link": "https://thisresumedoesnotexist.com/",
+    "description": "Stand out among the competition with over 1000 AI-inspired resume examples."
+  },
+  {
+    "productName": "HyreSnap",
+    "category": "resume",
+    "image": "https://tinyurl.com/3wfpyr8f",
+    "link": "https://hyresnap.com/resume-builder",
+    "description": "Elevate your interview chances with our Modern Resume Templates"
+  },
+  {
+    "productName": "skillroads",
+    "category": "resume",
+    "image": "https://skillroads.com/free-online-resume-builder",
+    "link": "https://skillroads.com/free-online-resume-builder",
+    "description": "Creating a modern and sharp resume has never been easier!"
+  },
+  {
+    "productName": "myperfectresume",
+    "category": "resume",
+    "image": "https://tinyurl.com/3cah9f79",
+    "link": "https://www.myperfectresume.com/",
+    "description": "Create Your Perfect Resume Today"
+  },
+  {
+    "productName": "VisualCV",
+    "category": "resume",
+    "image": "https://www.visualcv.com/",
+    "link": "https://www.visualcv.com/",
+    "description": "Create a job-ready resume in minutes."
+  },
+  {
+    "productName": "resume.com",
+    "category": "resume",
+    "image": "https://www.resume.com/",
+    "link": "https://www.resume.com/",
+    "description": "Build a professional resume for free"
+  },
+  {
+    "productName": "Google bard",
+    "category": "ai",
+    "image": "bit.ly/3NgYYx9",
+    "link": "https://bard.google.com/",
+    "description": "AI tools "
+  },
+  {
+    "productName": "Otter AI",
+    "category": "ai",
+    "image": "bit.ly/3CGspEe",
+    "link": "https://otter.ai/",
+    "description": "Convert voice to text"
+  },
+  {
+    "productName": "Runway AI",
+    "category": "ai",
+    "image": "bit.ly/3NpP7FE",
+    "link": "https://runwayml.com/",
+    "description": "Cloud-based video editing and effects platform"
+  },
+  {
+    "productName": "writefull",
+    "category": "ai",
+    "image": "https://tinyurl.com/5n936eaz",
+    "link": "https://www.writefull.com/#products",
+    "description": "assistant designed to help English writing skills"
+  },
+  {
+    "productName": "Chakra UI",
+    "category": "tools",
+    "image": "https://www.happylifecreators.com/wp/wp-content/uploads/2022/06/chakra-ui_title2-400x400.png",
+    "link": "https://chakra-ui.com",
+    "description": "Chakra UI is an accessible and customizable React component library for building UIs."
   }
 ]
-
