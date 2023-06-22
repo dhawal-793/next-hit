@@ -1,7 +1,7 @@
 'use client'
 
 import productsData from "@/DB/products.json"
-import { searchProducts, sortAscending, sortDescending } from "@/utils/search_sort";
+import { searchProducts, searchSuggestions, sortAscending, sortDescending } from "@/utils/search_sort";
 
 
 export const getView = () => {
@@ -16,6 +16,7 @@ export const updateView = (view) => {
 export const productReducerInitialState = {
     products: sortAscending(productsData),
     filteredProducts: [],
+    suggestions: [],
     view: "card",
     sort: "asc",
 };
@@ -40,15 +41,16 @@ export const productReducer = (state, action) => {
                 newFilteredProducts = state.products.filter(product => product.category.toLowerCase() === payload.category)
             }
             const filteredProducts = searchProducts(newFilteredProducts, payload.searchTerm)
+            const filteredSuggestions = searchSuggestions(filteredProducts, payload.searchTerm)
             if (state.sort === "asc") {
                 const sortedAscendingData = sortAscending(filteredProducts)
-                return { ...state, filteredProducts: sortedAscendingData }
+                return { ...state, filteredProducts: sortedAscendingData, suggestions: filteredSuggestions }
             }
             else if (state.sort === "desc") {
                 const sortedDescendingData = sortDescending(filteredProducts)
-                return { ...state, filteredProducts: sortedDescendingData }
+                return { ...state, filteredProducts: sortedDescendingData, suggestions: filteredSuggestions }
             }
-            const newState = { ...state, filteredProducts: filteredProducts }
+            const newState = { ...state, filteredProducts: filteredProducts, suggestions: filteredSuggestions }
             return newState
         }
         case actions.SORT_ASC: {
