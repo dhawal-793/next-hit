@@ -39,6 +39,14 @@ export const searchProducts = (products, searchTerm) => {
     return filteredProducts;
 }
 
+export const searchSuggestions = (products, searchTerm) => {
+    if (searchTerm.trim() === "") return products
+    const productNames = products.map(({ productName }) => productName)
+
+    return productNames.filter((productName) => productName.toLowerCase().startsWith(searchTerm.toLowerCase()))
+}
+
+
 function levenshteinDistance(s1, s2) {
     const m = s1.length
     const n = s2.length
